@@ -24,6 +24,8 @@ int main()
     printf("O mes informado possui %02d dias\n",numeroDiasMes(mes,ano));
     printf("A data seguinte eh: ");
     imprimeProximaData(dia,mes,ano);
+
+    return 0;
 }
 
 /** 
