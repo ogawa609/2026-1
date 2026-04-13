@@ -15,10 +15,8 @@ void associaLesaoPaciente(tPaciente *pacs, int qtdPacientes, tLesao les)
         obtemCartaoSusPaciente(pacs[i],susPaciente);
 
         if(strcmp(susLesao,susPaciente)==0)
-        {
-            if(obtemQuatidadeLesoesPaciente(pacs[i])<MAX_TAM_LES)
                 pacs[i]=insereLesaoPaciente(pacs[i],les);
-        }
+        
     }
 
 }

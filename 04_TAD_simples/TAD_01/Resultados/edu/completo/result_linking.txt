@@ -1,0 +1,14 @@
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: na função "_start":
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: Resultados/edu/completo/jogador.o: na função "JogaJogador":
+jogador.c:(.text+0xbe): undefined reference to `EhPosicaoValidaTabuleiro'
+/usr/bin/ld: jogador.c:(.text+0xdd): undefined reference to `EstaLivrePosicaoTabuleiro'
+/usr/bin/ld: jogador.c:(.text+0x11e): undefined reference to `MarcaPosicaoTabuleiro'
+/usr/bin/ld: Resultados/edu/completo/jogador.o: na função "VenceuJogador":
+jogador.c:(.text+0x23e): undefined reference to `EstaMarcadaPosicaoPecaTabuleiro'
+/usr/bin/ld: jogador.c:(.text+0x2a5): undefined reference to `EstaMarcadaPosicaoPecaTabuleiro'
+/usr/bin/ld: jogador.c:(.text+0x2f7): undefined reference to `EstaMarcadaPosicaoPecaTabuleiro'
+/usr/bin/ld: jogador.c:(.text+0x31c): undefined reference to `EstaMarcadaPosicaoPecaTabuleiro'
+/usr/bin/ld: jogador.c:(.text+0x341): undefined reference to `EstaMarcadaPosicaoPecaTabuleiro'
+/usr/bin/ld: Resultados/edu/completo/jogador.o:jogador.c:(.text+0x36d): mais referências não definidas para "EstaMarcadaPosicaoPecaTabuleiro" seguir
+collect2: error: ld returned 1 exit status
