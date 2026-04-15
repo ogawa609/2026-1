@@ -1,0 +1,9 @@
+Arquivos Esperados Corretos: 3 de 6
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste partida
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de edu para o teste partida: 2.50
+Nota de edu: 0+(2.50)
+Nota de edu: 2.50

@@ -1,0 +1,149 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: edu
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
+ - Diretório Resultados/edu criado com sucesso!
+ - Diretório Resultados/edu/partida criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/edu/franquia.c' não encontrado!
+ - Arquivo esperado 'Respostas/edu/franquia.h' encontrado!
+ - Arquivo esperado 'Respostas/edu/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/edu/partida.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/partida.h' encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta partida:
+ - Copiando os Casos de teste para a pasta Resultados/edu/partida
+ - Copiando os Includes/constantes.h Includes/franquia.h Includes/partida.h do professor para a pasta Resultados/edu/partida
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/partida
+	 - Removendo o partida.o do professor da pasta Resultados/edu/partida
+	 - Copiando o Respostas/edu/partida.c do aluno para a pasta Resultados/edu/partida
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+	 - Compilando a pasta partida do aluno, gerando os .o's
+	 - Compilação dos arquivos do aluno na pasta partida ok!
+	 - Arquivo de output gerado: Resultados/edu/partida/result_compilation.txt
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta partida:
+ - Gerando o binário prog linkando com o(s) arquivo(s) partida/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/partida/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta partida / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 10:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 7:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 8:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Pasta partida / Caso 9:
+ - Arquivo de output gerado: Resultados/edu/partida/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.00): 1.00 
+ - Nota para a pasta partida (máximo 2.50) - 10.00 de 10.00 - 100.00% de 2.50: 2.50.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: edu
+ - Arquivos Esperados Corretos: 3 de 6
+ - Pastas Compiladas Corretamente: 1 de 1 
+ - Pastas Linkadas Corretamente: 1 de 1
+ - Teste partida
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+	 - Nota de edu para o teste partida: 2.50
+ - Nota de edu: 0+(2.50)
+ - Nota de edu: 2.50
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+
