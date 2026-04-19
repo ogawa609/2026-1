@@ -9,6 +9,10 @@ ALUNO: edu
 CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
  - Diretório Resultados/edu criado com sucesso!
  - Diretório Resultados/edu/main criado com sucesso!
+ - Diretório Resultados/edu/completo criado com sucesso!
+ - Diretório Resultados/edu/eleicao criado com sucesso!
+ - Diretório Resultados/edu/candidato criado com sucesso!
+ - Diretório Resultados/edu/eleitor criado com sucesso!
  - Arquivos criados: ok!
 
 CHECKANDO OS ARQUIVOS DO ALUNO:
@@ -28,12 +32,47 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Copiando os Includes/*.o do professor para a pasta Resultados/edu/main
  - Removendo o main.o do professor da pasta Resultados/edu/main
  - Copiando o Respostas/edu/main.c do aluno para a pasta Resultados/edu/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/edu/completo
+ - Copiando os Respostas/edu/candidato.c do aluno para a pasta Resultados/edu/completo
+ - Copiando os Respostas/edu/candidato.h do aluno para a pasta Resultados/edu/completo
+ - Copiando os Respostas/edu/eleicao.c do aluno para a pasta Resultados/edu/completo
+ - Copiando os Respostas/edu/eleicao.h do aluno para a pasta Resultados/edu/completo
+ - Copiando os Respostas/edu/eleitor.c do aluno para a pasta Resultados/edu/completo
+ - Copiando os Respostas/edu/eleitor.h do aluno para a pasta Resultados/edu/completo
+ - Copiando os Respostas/edu/main.c do aluno para a pasta Resultados/edu/completo
+ - Pasta eleicao:
+ - Copiando os Casos de teste para a pasta Resultados/edu/eleicao
+ - Copiando os Includes/candidato.h Includes/eleicao.h Includes/eleitor.h do professor para a pasta Resultados/edu/eleicao
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/eleicao
+ - Removendo o eleicao.o do professor da pasta Resultados/edu/eleicao
+ - Copiando o Respostas/edu/eleicao.c do aluno para a pasta Resultados/edu/eleicao
+ - Pasta candidato:
+ - Copiando os Casos de teste para a pasta Resultados/edu/candidato
+ - Copiando os Includes/candidato.h Includes/eleicao.h Includes/eleitor.h do professor para a pasta Resultados/edu/candidato
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/candidato
+ - Removendo o candidato.o do professor da pasta Resultados/edu/candidato
+ - Copiando o Respostas/edu/candidato.c do aluno para a pasta Resultados/edu/candidato
+ - Pasta eleitor:
+ - Copiando os Casos de teste para a pasta Resultados/edu/eleitor
+ - Copiando os Includes/candidato.h Includes/eleicao.h Includes/eleitor.h do professor para a pasta Resultados/edu/eleitor
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/eleitor
+ - Removendo o eleitor.o do professor da pasta Resultados/edu/eleitor
+ - Copiando o Respostas/edu/eleitor.c do aluno para a pasta Resultados/edu/eleitor
  - Copiando Arquivos Extras do Aluno:
  - Arquivos copiados: ok!
 
 COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Compilação dos arquivos do aluno na pasta main ok!
  - Arquivo de output gerado: Resultados/edu/main/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta completo ok!
+ - Arquivo de output gerado: Resultados/edu/completo/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta eleicao ok!
+ - Arquivo de output gerado: Resultados/edu/eleicao/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta candidato ok!
+ - Arquivo de output gerado: Resultados/edu/candidato/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta eleitor ok!
+ - Arquivo de output gerado: Resultados/edu/eleitor/result_compilation.txt
  - Arquivos Compilados: ok!
 
 LINKANDO OS ARQUIVOS COMPILADOS:
@@ -41,6 +80,22 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
  - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/edu/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/completo/result_linking.txt
+ - Pasta eleicao:
+ - Gerando o binário prog linkando com o(s) arquivo(s) eleicao/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/eleicao/result_linking.txt
+ - Pasta candidato:
+ - Gerando o binário prog linkando com o(s) arquivo(s) candidato/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/candidato/result_linking.txt
+ - Pasta eleitor:
+ - Gerando o binário prog linkando com o(s) arquivo(s) eleitor/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/eleitor/result_linking.txt
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
@@ -95,6 +150,214 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Nota para a pasta main (máximo 2.00) - 100.00 de 100 - 100.00% de 2.00: 2.00.
  -----
+ - Pasta completo / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 10:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 7:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 8:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta completo / Caso 9:
+ - Arquivo de output gerado: Resultados/edu/completo/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta completo (máximo 2.00) - 100.00 de 100 - 100.00% de 2.00: 2.00.
+ -----
+ - Pasta eleicao / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 10:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 7:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 8:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleicao / Caso 9:
+ - Arquivo de output gerado: Resultados/edu/eleicao/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta eleicao (máximo 2.00) - 100.00 de 100 - 100.00% de 2.00: 2.00.
+ -----
+ - Pasta candidato / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 10:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 7:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 8:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta candidato / Caso 9:
+ - Arquivo de output gerado: Resultados/edu/candidato/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta candidato (máximo 2.00) - 100.00 de 100 - 100.00% de 2.00: 2.00.
+ -----
+ - Pasta eleitor / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 10:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 7:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 8:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta eleitor / Caso 9:
+ - Arquivo de output gerado: Resultados/edu/eleitor/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta eleitor (máximo 2.00) - 100.00 de 100 - 100.00% de 2.00: 2.00.
+ -----
 
 #######################################
 RESULTADOS FINAIS
@@ -103,14 +366,30 @@ RESULTADOS FINAIS
 ----------------------------------------------------------------------------
 Aluno: edu
  - Arquivos Esperados Corretos: 7 de 7
- - Pastas Compiladas Corretamente: 1 de 1 
- - Pastas Linkadas Corretamente: 1 de 1
+ - Pastas Compiladas Corretamente: 5 de 5 
+ - Pastas Linkadas Corretamente: 5 de 5
  - Teste main
  - Resultados corretos: 10 de 10
  - Valgrinds corretos: 10 de 10
  - Nota de edu para o teste main: 2.00
- - Nota de edu: 0+(2.00)
- - Nota de edu: 2.00
+ - Teste completo
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de edu para o teste completo: 2.00
+ - Teste eleicao
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de edu para o teste eleicao: 2.00
+ - Teste candidato
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de edu para o teste candidato: 2.00
+ - Teste eleitor
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de edu para o teste eleitor: 2.00
+ - Nota de edu: 0+(2.00)+(2.00)+(2.00)+(2.00)+(2.00)
+ - Nota de edu: 10.00
 
 ----------------------------------------------------------------------------
 
