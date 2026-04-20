@@ -1,7 +1,7 @@
 locadora.c: In function ‘devolverFilmesLocadora’:
-locadora.c:180:17: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]
-  180 |                 else
+locadora.c:179:17: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]
+  179 |                 else
       |                 ^~~~
-locadora.c:182:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
-  182 |                     imprimirNomeFilme(locadora.filme[j]);
+locadora.c:181:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+  181 |                     imprimirNomeFilme(locadora.filme[j]);
       |                     ^~~~~~~~~~~~~~~~~

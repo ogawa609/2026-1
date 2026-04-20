@@ -145,7 +145,6 @@ tLocadora lerAluguelLocadora (tLocadora locadora)
         qntAlugada++;
     }
     scanf("%*c");
-
     locadora= alugarFilmesLocadora(locadora,codigos,qntAlugada);
 
     return locadora;
