@@ -1,0 +1,7 @@
+franquia.c: In function ‘ImprimeDadosConferencia’:
+franquia.c:137:18: warning: unused variable ‘aprL’ [-Wunused-variable]
+  137 |     float apro=0,aprL=0;
+      |                  ^~~~
+franquia.c:137:11: warning: unused variable ‘apro’ [-Wunused-variable]
+  137 |     float apro=0,aprL=0;
+      |           ^~~~
