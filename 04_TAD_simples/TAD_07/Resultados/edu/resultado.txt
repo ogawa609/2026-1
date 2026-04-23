@@ -1,0 +1,9 @@
+Arquivos Esperados Corretos: 3 de 3
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste main
+  - Resultados corretos: 6 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de edu para o teste main: 3.34
+Nota de edu: 0+(3.34)
+Nota de edu: 3.34
