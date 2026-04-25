@@ -1,0 +1,3 @@
+departamento.c:39:2: warning: "/*" within comment [-Wcomment]
+   39 |  /**  ATRIBUTOS:
+      |   
