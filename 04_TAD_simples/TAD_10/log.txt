@@ -1,0 +1,147 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: edu
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
+ - Diretório Resultados/edu criado com sucesso!
+ - Diretório Resultados/edu/biblioteca criado com sucesso!
+ - Diretório Resultados/edu/livro criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/edu/biblioteca.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/biblioteca.h' encontrado!
+ - Arquivo esperado 'Respostas/edu/livro.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/livro.h' encontrado!
+ - Arquivo esperado 'Respostas/edu/main.c' não encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta biblioteca:
+ - Copiando os Casos de teste para a pasta Resultados/edu/biblioteca
+ - Copiando os Includes/biblioteca.h Includes/livro.h do professor para a pasta Resultados/edu/biblioteca
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/biblioteca
+ - Removendo o biblioteca.o do professor da pasta Resultados/edu/biblioteca
+ - Copiando o Respostas/edu/biblioteca.c do aluno para a pasta Resultados/edu/biblioteca
+ - Pasta livro:
+ - Copiando os Casos de teste para a pasta Resultados/edu/livro
+ - Copiando os Includes/biblioteca.h Includes/livro.h do professor para a pasta Resultados/edu/livro
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/livro
+ - Removendo o livro.o do professor da pasta Resultados/edu/livro
+ - Copiando o Respostas/edu/livro.c do aluno para a pasta Resultados/edu/livro
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Compilação dos arquivos do aluno na pasta biblioteca ok!
+ - Arquivo de output gerado: Resultados/edu/biblioteca/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta livro ok!
+ - Arquivo de output gerado: Resultados/edu/livro/result_compilation.txt
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta biblioteca:
+ - Gerando o binário prog linkando com o(s) arquivo(s) biblioteca/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/biblioteca/result_linking.txt
+ - Pasta livro:
+ - Gerando o binário prog linkando com o(s) arquivo(s) livro/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/livro/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta biblioteca / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/biblioteca/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta biblioteca / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/biblioteca/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta biblioteca / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/biblioteca/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta biblioteca / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/biblioteca/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 305 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta biblioteca / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/biblioteca/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta biblioteca / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/biblioteca/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta biblioteca (máximo 2.50) - 0 de 60 - 0% de 2.50: 0.
+ -----
+ - Pasta livro / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/livro/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta livro / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/livro/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta livro / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/livro/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta livro / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/livro/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta livro / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/livro/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta livro / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/livro/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta livro (máximo 2.50) - 60.00 de 60 - 100.00% de 2.50: 2.50.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: edu
+ - Arquivos Esperados Corretos: 4 de 5
+ - Pastas Compiladas Corretamente: 2 de 2 
+ - Pastas Linkadas Corretamente: 2 de 2
+ - Teste biblioteca
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 5 de 6
+ - Nota de edu para o teste biblioteca: 0
+ - Teste livro
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de edu para o teste livro: 2.50
+ - Nota de edu: 0+(2.50)+(0)
+ - Nota de edu: 2.50
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+
