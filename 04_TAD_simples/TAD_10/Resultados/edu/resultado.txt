@@ -1,13 +1,9 @@
-Arquivos Esperados Corretos: 4 de 5
-Pastas Compiladas Corretamente: 2 de 2 
-Pastas Linkadas Corretamente: 2 de 2
-Teste biblioteca
-  - Resultados corretos: 0 de 6
-  - Valgrinds corretos: 5 de 6
-Nota de edu para o teste biblioteca: 0
-Teste livro
+Arquivos Esperados Corretos: 5 de 5
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste main
   - Resultados corretos: 6 de 6
   - Valgrinds corretos: 6 de 6
-Nota de edu para o teste livro: 2.50
-Nota de edu: 0+(2.50)+(0)
+Nota de edu para o teste main: 2.50
+Nota de edu: 0+(2.50)
 Nota de edu: 2.50

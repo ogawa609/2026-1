@@ -3,7 +3,7 @@ Arquivos
 Valgrind
 	desconto=0.5
 Validações
-	#main=2.50
+	main=2.50
 	#completo=2.50
-	biblioteca=2.50
-	livro=2.50
+	#biblioteca=2.50
+	#livro=2.50

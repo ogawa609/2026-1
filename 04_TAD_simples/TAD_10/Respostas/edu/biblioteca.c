@@ -26,14 +26,14 @@ tBiblioteca inicializarBiblioteca()
  */
 tBiblioteca adicionarLivroNaBiblioteca(tBiblioteca biblioteca, tLivros livro)
 {
-    if(biblioteca.tamanho<=MAX_LIVROS)
+    if(biblioteca.tamanho<MAX_LIVROS)
     {
         biblioteca.livros[biblioteca.tamanho] = livro;
         biblioteca.tamanho++;
-        printf("Livro adcionado com sucesso!\n");
+        printf("Livro adicionado com sucesso!\n\n");
     }
     else 
-        printf("A biblioteca esta cheia. Nao eh possivel adicionar mais livros.\n");
+        printf("A biblioteca esta cheia. Nao eh possivel adicionar mais livros.\n\n");
 
     
     return biblioteca;
@@ -55,7 +55,7 @@ tBiblioteca removerLivroDaBiblioteca(tBiblioteca biblioteca, char *titulo)
     {
         if(verificaTituloDoLivroNaBiblioteca(biblioteca.livros[i],titulo))
         {
-            printf("Livro removido com sucesso!\n");
+            printf("Livro removido com sucesso!\n\n");
 
             for(int j=i+1;j<biblioteca.tamanho;j++)
             {
@@ -68,7 +68,7 @@ tBiblioteca removerLivroDaBiblioteca(tBiblioteca biblioteca, char *titulo)
     }
 
     if(check)
-        printf("Livro nao encontrado na biblioteca.\n");
+        printf("Livro nao encontrado na biblioteca.\n\n");
 
     return biblioteca;
 }
@@ -96,8 +96,8 @@ int verificaTituloDoLivroNaBiblioteca(tLivros livro, char* titulo)
  */
 void listarLivrosDaBiblioteca(tBiblioteca biblioteca)
 {
-    if(biblioteca.tamanho==0)
-        printf("A biblioteca esta vazia!\n");
+    if(biblioteca.tamanho<1)
+        printf("A biblioteca esta vazia!\n\n");
     else
     {
         printf("Lista de Livros na Biblioteca:\n");
