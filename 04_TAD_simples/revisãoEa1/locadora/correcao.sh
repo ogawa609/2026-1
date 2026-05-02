@@ -9,10 +9,8 @@ DIR_GAB_OBJ="Gabarito-obj"
 DIR_GAB_INCLUDES="Includes"
 DIR_GAB_CASOS=Casos
 DIR_INCLUDES=Includes
-DIR_BONUS_CASOS=Bonus
 
 declare -A pesos_arquivos=()
-declare -A pesos_bonus_arquivos=()
 declare -A pesos_testes=()
 declare -A notas_testes=()
 declare -A notas_alunos=()
@@ -31,7 +29,6 @@ CONTINUE_RESULTS=false
 TERMINAL_OUTPUT_LOG=""
 peso_total_arquivos=0
 config_file_names=()
-config_bonus_file_names=()
 config_test_names=()
 # config_bin_file_names=()
 nomes_alunos=()
@@ -132,9 +129,6 @@ le_arq_config () {
             elif test "$line" == "Nota"; then
                 config_section=4
                 continue
-            elif test "$line" == "Bonus"; then
-                config_section=5
-                continue
             elif test "$line" == "InterfaceFixa"; then
                 config_section=0
                 FIXED_INTERFACE=true
@@ -182,11 +176,6 @@ le_arq_config () {
                     fi
                 elif test $config_section == 4; then
                     string_nota_bc=$line
-                elif test $config_section == 5; then
-                    readarray -d = -t lines < <(printf '%s' "$line")
-                    if [[ ! " ${config_bonus_file_names[*]} " =~ " ${lines[0]} " ]]; then
-                        config_bonus_file_names+=(${lines[0]})
-                    fi
                 fi
             fi
         done < <(grep . "${CONFIG_FILE}")
@@ -780,14 +769,13 @@ executa_aluno() {
                         fi
 
                         found=false
-                        # Nao entendi porque essa parte do codigo (ignora o main.c)
-                        # for gab_src_file in "$DIR_GAB_OBJ/"*.o; do
-                        #     gab_src_file=$(basename "$gab_src_file" .o)
-                        #     if [[ "$gab_src_file" = "$filename" ]]; then
-                        #         found=true
-                        #         break
-                        #     fi
-                        # done
+                        for gab_src_file in "$DIR_GAB_OBJ/"*.o; do
+                            gab_src_file=$(basename "$gab_src_file" .o)
+                            if [[ "$gab_src_file" = "$filename" ]]; then
+                                found=true
+                                break
+                            fi
+                        done
                         if [ "$found" = "false" ]; then
                             for src_file_path in "${config_test_names[@]}"; do
                                 if [[ $MAIN_AGRUPADA == false || $src_file_path == "main" || $src_file_path == "completo" ]]; then
