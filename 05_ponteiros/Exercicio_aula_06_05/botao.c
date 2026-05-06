@@ -90,9 +90,8 @@ Funcao que desenha o botao quando a tela eh exibida.
 */
 void desenhaBotao(Botao b, int idx)
 {
-    printf("Indice: %d\n",idx);
-    printf("Texto: %s\n",b.texto);
-    printf("Cor: %s\n",b.corHex);
-    printf("Fonte: %d\n",b.tamFonte);
-    printf("TIpo: %d\n",b.tipo);
+    printf("*********************\n");
+    printf("   %s   \n",b.texto);
+    printf(" %s | %d | %d  \n",b.corHex,b.tamFonte,b.tipo);
+     printf("********************\n\n\n");
 }
