@@ -1,0 +1,16 @@
+==72233== Memcheck, a memory error detector
+==72233== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==72233== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==72233== Command: Resultados/edu/evento/prog Resultados/edu/evento/Casos/6
+==72233== Parent PID: 72232
+==72233== 
+==72233== Conditional jump or move depends on uninitialised value(s)
+==72233==    at 0x484F37F: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==72233==    by 0x109257: cadastrarEvento (in /home/ogawa/Downloads/Programacao/Prog2/2026-1/git/05_ponteiros/pont_07/Resultados/edu/evento/prog)
+==72233==    by 0x1096C7: main (in /home/ogawa/Downloads/Programacao/Prog2/2026-1/git/05_ponteiros/pont_07/Resultados/edu/evento/prog)
+==72233== 
+==72233== Conditional jump or move depends on uninitialised value(s)
+==72233==    at 0x484F397: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==72233==    by 0x109257: cadastrarEvento (in /home/ogawa/Downloads/Programacao/Prog2/2026-1/git/05_ponteiros/pont_07/Resultados/edu/evento/prog)
+==72233==    by 0x1096C7: main (in /home/ogawa/Downloads/Programacao/Prog2/2026-1/git/05_ponteiros/pont_07/Resultados/edu/evento/prog)
+==72233== 

@@ -1,0 +1,22 @@
+evento.c: In function ‘cadastrarEvento’:
+evento.c:27:9: warning: value computed is not used [-Wunused-value]
+   27 |         *numEventos++;
+      |         ^~~~~~~~~~~~~
+evento.c: In function ‘exibirEventos’:
+evento.c:44:18: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Wformat=]
+   44 |         printf("%d - %s - %02d/%02d/%d",eventos[i].nome,eventos[i].dia,eventos[i].mes,eventos[i].ano);
+      |                 ~^                      ~~~~~~~~~~~~~~~
+      |                  |                                |
+      |                  int                              char *
+      |                 %s
+evento.c:44:23: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+   44 |         printf("%d - %s - %02d/%02d/%d",eventos[i].nome,eventos[i].dia,eventos[i].mes,eventos[i].ano);
+      |                      ~^                                 ~~~~~~~~~~~~~~
+      |                       |                                           |
+      |                       char *                                      int
+      |                      %d
+evento.c:44:38: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+   44 |         printf("%d - %s - %02d/%02d/%d",eventos[i].nome,eventos[i].dia,eventos[i].mes,eventos[i].ano);
+      |                                     ~^
+      |                                      |
+      |                                      int
