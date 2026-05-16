@@ -1,0 +1,8 @@
+data.c: In function ‘InformaQtdDiasNoMes’:
+data.c:85:9: warning: unused variable ‘ano’ [-Wunused-variable]
+   85 |     int ano = data->ano;
+      |         ^~~
+data.c: In function ‘AvancaParaDiaSeguinte’:
+data.c:112:9: warning: unused variable ‘ano’ [-Wunused-variable]
+  112 |     int ano = data->ano;
+      |         ^~~
