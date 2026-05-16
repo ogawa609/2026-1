@@ -1,0 +1,6 @@
+==76132== Memcheck, a memory error detector
+==76132== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==76132== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==76132== Command: Resultados/edu/completo/prog Resultados/edu/completo/Casos/2
+==76132== Parent PID: 76131
+==76132== 

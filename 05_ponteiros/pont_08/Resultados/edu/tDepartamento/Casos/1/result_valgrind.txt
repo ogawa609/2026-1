@@ -1,0 +1,6 @@
+==76259== Memcheck, a memory error detector
+==76259== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==76259== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==76259== Command: Resultados/edu/tDepartamento/prog Resultados/edu/tDepartamento/Casos/1
+==76259== Parent PID: 76258
+==76259== 
