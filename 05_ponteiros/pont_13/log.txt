@@ -12,10 +12,10 @@ CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
  - Arquivos criados: ok!
 
 CHECKANDO OS ARQUIVOS DO ALUNO:
- - Arquivo esperado 'Respostas/edu/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/edu/main.c' encontrado!
  - Arquivo esperado 'Respostas/edu/rolagem.c' encontrado!
  - Arquivo esperado 'Respostas/edu/rolagem.h' encontrado!
- - Arquivos esperados enviados: Faltando!
+ - Arquivos esperados enviados: Ok!
 
 COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Pasta rolagem:
@@ -58,7 +58,7 @@ RESULTADOS FINAIS
 
 ----------------------------------------------------------------------------
 Aluno: edu
- - Arquivos Esperados Corretos: 2 de 3
+ - Arquivos Esperados Corretos: 3 de 3
  - Pastas Compiladas Corretamente: 1 de 1 
  - Pastas Linkadas Corretamente: 1 de 1
  - Teste rolagem

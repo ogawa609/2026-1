@@ -2,23 +2,22 @@
 #include <string.h>
 #include "rolagem.h"
 
-
-void Mensagem(char msg[NUM_MAX_MSGS][TAM_MAX_MSG],int *n)
+void leMensagens(char msg[NUM_MAX_MSGS][TAM_MAX_MSG], int *nMsg)
 {
-    scanf("%d",n);
 
-    for(int i=0;i<*n;i++)
-    {
-        scanf(" %[^\n]",msg[i]);
+
+    scanf("%d",nMsg);
+
+    for (int i = 0; i < *nMsg; i++)
+    {   
+        scanf(" %[^\n]", msg[i]);
     }
 }
-
 int main()
-{
-    int temp;
-    scanf("%d",&temp);
+{   
+    int nExecucoes; 
+    scanf("%d", &nExecucoes);
+    RolaMsg(leMensagens, 30, nExecucoes);
 
-    RolaMsg(Mensagem,30,temp);
-
-    return 0;
+        return 0;
 }
