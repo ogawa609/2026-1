@@ -1,0 +1,19 @@
+utils.c: In function ‘CriaVetor’:
+utils.c:13:18: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   13 |     int *vetor = calloc(tamanho,sizeof(int));
+      |                  ^~~~~~
+utils.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    2 | #include "utils.h"
+  +++ |+#include <stdlib.h>
+    3 | 
+utils.c:13:18: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   13 |     int *vetor = calloc(tamanho,sizeof(int));
+      |                  ^~~~~~
+utils.c:13:18: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+utils.c: In function ‘LiberaVetor’:
+utils.c:60:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   60 |     free(vetor);
+      |     ^~~~
+utils.c:60:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+utils.c:60:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+utils.c:60:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
