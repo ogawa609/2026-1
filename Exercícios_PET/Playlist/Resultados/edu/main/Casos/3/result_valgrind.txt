@@ -1,0 +1,15 @@
+==76991== Memcheck, a memory error detector
+==76991== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==76991== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==76991== Command: Resultados/edu/main/prog Resultados/edu/main/Casos/3
+==76991== Parent PID: 76990
+==76991== 
+==76991== 
+==76991== HEAP SUMMARY:
+==76991==     in use at exit: 0 bytes in 0 blocks
+==76991==   total heap usage: 9 allocs, 9 frees, 4,699 bytes allocated
+==76991== 
+==76991== All heap blocks were freed -- no leaks are possible
+==76991== 
+==76991== For lists of detected and suppressed errors, rerun with: -s
+==76991== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
