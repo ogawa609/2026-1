@@ -1,0 +1,9 @@
+Arquivos Esperados Corretos: 7 de 9
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste tabuleiro
+  - Resultados corretos: 6 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de edu para o teste tabuleiro: 1.67
+Nota de edu: 0+(1.67)
+Nota de edu: 1.67
