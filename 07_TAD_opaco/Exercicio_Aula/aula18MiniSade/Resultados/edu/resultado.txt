@@ -1,9 +1,9 @@
-Arquivos Esperados Corretos: 5 de 10
+Arquivos Esperados Corretos: 6 de 10
 Pastas Compiladas Corretamente: 1 de 1 
 Pastas Linkadas Corretamente: 1 de 1
-Teste data
-  - Resultados corretos: 3 de 6
-  - Valgrinds corretos: 6 de 6
-Nota de edu para o teste data: .50
-Nota de edu: 0+(.50)
-Nota de edu: .50
+Teste lesao
+  - Resultados corretos: 2 de 6
+  - Valgrinds corretos: 5 de 6
+Nota de edu para o teste lesao: .66
+Nota de edu: 0+(.66)
+Nota de edu: .66

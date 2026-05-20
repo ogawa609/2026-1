@@ -1,0 +1,32 @@
+==178428== Memcheck, a memory error detector
+==178428== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==178428== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==178428== Command: Resultados/edu/lesao/prog Resultados/edu/lesao/Casos/3
+==178428== Parent PID: 178427
+==178428== 
+==178428== Conditional jump or move depends on uninitialised value(s)
+==178428==    at 0x484F37F: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==178428==    by 0x1094D8: obtemCartaoSusLesao (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428==    by 0x109B68: associaLesaoPaciente (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428==    by 0x1095E1: main (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428== 
+==178428== Conditional jump or move depends on uninitialised value(s)
+==178428==    at 0x484F397: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==178428==    by 0x1094D8: obtemCartaoSusLesao (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428==    by 0x109B68: associaLesaoPaciente (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428==    by 0x1095E1: main (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428== 
+==178428== Conditional jump or move depends on uninitialised value(s)
+==178428==    at 0x485036C: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==178428==    by 0x109BA1: associaLesaoPaciente (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428==    by 0x1095E1: main (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428== 
+==178428== Conditional jump or move depends on uninitialised value(s)
+==178428==    at 0x4850394: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==178428==    by 0x109BA1: associaLesaoPaciente (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428==    by 0x1095E1: main (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428== 
+==178428== Conditional jump or move depends on uninitialised value(s)
+==178428==    at 0x109BA4: associaLesaoPaciente (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428==    by 0x1095E1: main (in /home/evogawa/2026-1/07_TAD_opaco/Exercicio_Aula/aula18MiniSade/Resultados/edu/lesao/prog)
+==178428== 

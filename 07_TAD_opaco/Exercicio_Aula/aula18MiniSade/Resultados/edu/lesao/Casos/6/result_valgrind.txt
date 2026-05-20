@@ -1,0 +1,6 @@
+==179041== Memcheck, a memory error detector
+==179041== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==179041== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==179041== Command: Resultados/edu/lesao/prog Resultados/edu/lesao/Casos/6
+==179041== Parent PID: 179040
+==179041== 

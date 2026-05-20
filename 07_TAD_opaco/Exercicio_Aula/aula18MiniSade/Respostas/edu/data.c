@@ -4,9 +4,9 @@
 
 struct Data
 {
-    int *day;
-    int *month;
-    int *year;
+    int day;
+    int month;
+    int year;
 
 };
 
@@ -17,13 +17,9 @@ tData* leData()
     int day,month,year;
     scanf("%d/%d/%d\n",&day,&month,&year);
 
-    date->day = (int*) malloc(sizeof(int));
-    date->month = (int*) malloc(sizeof(int));
-    date->year = (int*) malloc(sizeof(int));
-
-    *date->day = day;
-    *date->month = month;
-    *date->year = year;
+    date->day = day;
+    date->month = month;
+    date->year = year;
 
     return date;
 }
@@ -31,31 +27,34 @@ tData* leData()
 
 void printData(tData* d)
 {
-    printf("%02d/%02d/%d",*d->day,*d->month,*d->year);
+    printf("%02d/%02d/%d",d->day,d->month,d->year);
 }
 
 int retornaAno(tData* inicio)
 {
-    int idade = 2026 - *inicio->year;
+    tData today = {3,4,2024};
 
-    if(*inicio->month<4)
-        idade--;
+    int age = today.year - inicio->year;
 
-    else if(*inicio->month==4)
+    if(today.month<inicio->month)
+         age--;
+
+    else if(today.month==inicio->month)
     {
-        if(*inicio->day<=11)
-            idade--;
+        if(today.day<inicio->day)
+           age--;
     }
+     
+    
 
-    return idade;
+
+        return age;
 
 }
 
 void liberaData(tData *d)
 {
-    free(d->day);
-    free(d->month);
-    free(d->year);
-
-    free(d);
+    
+    if(d!=NULL)
+        free(d);
 }

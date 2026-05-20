@@ -8,13 +8,13 @@ ALUNO: edu
 
 CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
  - Diretório Resultados/edu criado com sucesso!
- - Diretório Resultados/edu/data criado com sucesso!
+ - Diretório Resultados/edu/lesao criado com sucesso!
  - Arquivos criados: ok!
 
 CHECKANDO OS ARQUIVOS DO ALUNO:
  - Arquivo esperado 'Respostas/edu/data.c' encontrado!
  - Arquivo esperado 'Respostas/edu/data.h' encontrado!
- - Arquivo esperado 'Respostas/edu/lesao.c' não encontrado!
+ - Arquivo esperado 'Respostas/edu/lesao.c' encontrado!
  - Arquivo esperado 'Respostas/edu/lesao.h' encontrado!
  - Arquivo esperado 'Respostas/edu/main.c' não encontrado!
  - Arquivo esperado 'Respostas/edu/paciente.c' não encontrado!
@@ -24,75 +24,74 @@ CHECKANDO OS ARQUIVOS DO ALUNO:
  - Arquivos esperados enviados: Faltando!
 
 COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
- - Pasta data:
- - Copiando os Casos de teste para a pasta Resultados/edu/data
- - Copiando os Includes/constantes.h Includes/data.h Includes/lesao.h Includes/paciente.h Includes/utils.h do professor para a pasta Resultados/edu/data
- - Copiando os Includes/*.o do professor para a pasta Resultados/edu/data
-	 - Removendo o data.o do professor da pasta Resultados/edu/data
-	 - Copiando o Respostas/edu/data.c do aluno para a pasta Resultados/edu/data
+ - Pasta lesao:
+ - Copiando os Casos de teste para a pasta Resultados/edu/lesao
+ - Copiando os Includes/constantes.h Includes/data.h Includes/lesao.h Includes/paciente.h Includes/utils.h do professor para a pasta Resultados/edu/lesao
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/lesao
+	 - Removendo o lesao.o do professor da pasta Resultados/edu/lesao
+	 - Copiando o Respostas/edu/lesao.c do aluno para a pasta Resultados/edu/lesao
  - Copiando Arquivos Extras do Aluno:
- - Copiando Respostas/edu/constantes.h para Resultados/edu/data
+ - Copiando Respostas/edu/constantes.h para Resultados/edu/lesao
  - Arquivos copiados: ok!
 
 COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
-	 - Compilando a pasta data do aluno, gerando os .o's
-	 - Compilação dos arquivos do aluno na pasta data ok!
-	 - Arquivo de output gerado: Resultados/edu/data/result_compilation.txt
+	 - Compilando a pasta lesao do aluno, gerando os .o's
+	 - Compilação dos arquivos do aluno na pasta lesao ok!
+	 - Arquivo de output gerado: Resultados/edu/lesao/result_compilation.txt
  - Arquivos Compilados: ok!
 
 LINKANDO OS ARQUIVOS COMPILADOS:
- - Pasta data:
- - Gerando o binário prog linkando com o(s) arquivo(s) data/*.o
+ - Pasta lesao:
+ - Gerando o binário prog linkando com o(s) arquivo(s) lesao/*.o
  - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
- - Arquivo de output gerado: Resultados/edu/data/result_linking.txt
+ - Arquivo de output gerado: Resultados/edu/lesao/result_linking.txt
 
 EXECUTANDO O VALGRIND EM CADA CASO:
- - Pasta data / Caso 1:
- - Arquivo de output gerado: Resultados/edu/data/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 34, frees: 34, errors: 0 | Desconto do valgrind: 0.0%
+ - Pasta lesao / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/lesao/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Comparando saida.txt do aluno e do gabarito...
 	 - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Soma dos pesos dos arquivos: 0 (soma total) = 0 de 10.0 pontos.
 	 - Nota para o Caso (máximo: 1.60): 0 
- - Pasta data / Caso 2:
- - Arquivo de output gerado: Resultados/edu/data/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 11, frees: 11, errors: 0 | Desconto do valgrind: 0.0%
- - Comparando saida.txt do aluno e do gabarito...
-	 - As saídas coincidem!
-	 - Resultado para o saida.txt: Ok! Peso: 10
- - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
-	 - Nota para o Caso (máximo: 1.60): 1.60 
- - Pasta data / Caso 3:
- - Arquivo de output gerado: Resultados/edu/data/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
+ - Pasta lesao / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/lesao/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Comparando saida.txt do aluno e do gabarito...
 	 - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Soma dos pesos dos arquivos: 0 (soma total) = 0 de 10.0 pontos.
 	 - Nota para o Caso (máximo: 1.60): 0 
- - Pasta data / Caso 4:
- - Arquivo de output gerado: Resultados/edu/data/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Pasta lesao / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/lesao/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Comparando saida.txt do aluno e do gabarito...
 	 - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Soma dos pesos dos arquivos: 0 (soma total) = 0 de 10.0 pontos.
 	 - Nota para o Caso (máximo: 1.60): 0 
- - Pasta data / Caso 5:
- - Arquivo de output gerado: Resultados/edu/data/Casos/5/result_valgrind.txt.
+ - Pasta lesao / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/lesao/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 500, frees: 500, errors: 202 | Desconto do valgrind 50.00%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Soma dos pesos dos arquivos: 0 (soma total) = 0 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 0 
+ - Pasta lesao / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/lesao/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
  - Comparando saida.txt do aluno e do gabarito...
 	 - As saídas coincidem!
 	 - Resultado para o saida.txt: Ok! Peso: 10
  - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
 	 - Nota para o Caso (máximo: 1.60): 1.60 
- - Pasta data / Caso 6:
- - Arquivo de output gerado: Resultados/edu/data/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 3, frees: 3, errors: 0 | Desconto do valgrind: 0.0%
+ - Pasta lesao / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/lesao/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Comparando saida.txt do aluno e do gabarito...
 	 - As saídas coincidem!
 	 - Resultado para o saida.txt: Ok! Peso: 10
  - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
 	 - Nota para o Caso (máximo: 1.60): 1.60 
- - Nota para a pasta data (máximo 1.00) - 4.80 de 9.60 - 50.00% de 1.00: .50.
+ - Nota para a pasta lesao (máximo 2.00) - 3.20 de 9.60 - 33.00% de 2.00: .66.
  -----
 
 #######################################
@@ -101,15 +100,15 @@ RESULTADOS FINAIS
 
 ----------------------------------------------------------------------------
 Aluno: edu
- - Arquivos Esperados Corretos: 5 de 10
+ - Arquivos Esperados Corretos: 6 de 10
  - Pastas Compiladas Corretamente: 1 de 1 
  - Pastas Linkadas Corretamente: 1 de 1
- - Teste data
- - Resultados corretos: 3 de 6
- - Valgrinds corretos: 6 de 6
-	 - Nota de edu para o teste data: .50
- - Nota de edu: 0+(.50)
- - Nota de edu: .50
+ - Teste lesao
+ - Resultados corretos: 2 de 6
+ - Valgrinds corretos: 5 de 6
+	 - Nota de edu para o teste lesao: .66
+ - Nota de edu: 0+(.66)
+ - Nota de edu: .66
 
 ----------------------------------------------------------------------------
 

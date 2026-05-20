@@ -4,8 +4,8 @@ Valgrind
 	desconto=0.5
 Validações
 	#main=2.00
-	data=1.00
+	#data=1.00
 	#completo=2.00
 	#utils=1.00
 	#paciente=2.00
-	#lesao=2.00
+	lesao=2.00
