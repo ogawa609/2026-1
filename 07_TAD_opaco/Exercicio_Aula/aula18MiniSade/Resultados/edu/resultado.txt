@@ -1,0 +1,9 @@
+Arquivos Esperados Corretos: 5 de 10
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste data
+  - Resultados corretos: 3 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de edu para o teste data: .50
+Nota de edu: 0+(.50)
+Nota de edu: .50
