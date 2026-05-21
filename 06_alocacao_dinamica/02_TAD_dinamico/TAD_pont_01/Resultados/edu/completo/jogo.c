@@ -94,6 +94,7 @@ int AcabouJogo(tJogo* jogo)
 int ContinuaJogo()
 {
     printf("Jogar novamente? (s,n)\n");
+    
     while(1){
     char resposta;
     scanf(" %c",&resposta);

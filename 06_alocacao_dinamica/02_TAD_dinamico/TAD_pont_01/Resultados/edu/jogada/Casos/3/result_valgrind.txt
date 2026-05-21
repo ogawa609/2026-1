@@ -1,15 +1,15 @@
-==192751== Memcheck, a memory error detector
-==192751== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==192751== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==192751== Command: Resultados/edu/jogada/prog Resultados/edu/jogada/Casos/3
-==192751== Parent PID: 192750
-==192751== 
-==192751== 
-==192751== HEAP SUMMARY:
-==192751==     in use at exit: 0 bytes in 0 blocks
-==192751==   total heap usage: 47 allocs, 47 frees, 8,687 bytes allocated
-==192751== 
-==192751== All heap blocks were freed -- no leaks are possible
-==192751== 
-==192751== For lists of detected and suppressed errors, rerun with: -s
-==192751== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==199585== Memcheck, a memory error detector
+==199585== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==199585== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==199585== Command: Resultados/edu/jogada/prog Resultados/edu/jogada/Casos/3
+==199585== Parent PID: 199584
+==199585== 
+==199585== 
+==199585== HEAP SUMMARY:
+==199585==     in use at exit: 0 bytes in 0 blocks
+==199585==   total heap usage: 47 allocs, 47 frees, 8,687 bytes allocated
+==199585== 
+==199585== All heap blocks were freed -- no leaks are possible
+==199585== 
+==199585== For lists of detected and suppressed errors, rerun with: -s
+==199585== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
