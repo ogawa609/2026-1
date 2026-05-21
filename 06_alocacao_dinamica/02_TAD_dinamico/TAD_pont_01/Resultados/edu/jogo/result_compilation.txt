@@ -1,0 +1,7 @@
+jogo.c: In function ‘DestroiJogo’:
+jogo.c:120:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  120 |     if(jogo->jogador2!=NULL)
+      |     ^~
+jogo.c:122:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  122 |         if(jogo->tabuleiro!=NULL)
+      |         ^~
