@@ -1,0 +1,15 @@
+==40924== Memcheck, a memory error detector
+==40924== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==40924== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==40924== Command: Resultados/edu/main/prog Resultados/edu/main/Casos/11
+==40924== Parent PID: 40923
+==40924== 
+==40924== 
+==40924== HEAP SUMMARY:
+==40924==     in use at exit: 0 bytes in 0 blocks
+==40924==   total heap usage: 7 allocs, 7 frees, 8,304 bytes allocated
+==40924== 
+==40924== All heap blocks were freed -- no leaks are possible
+==40924== 
+==40924== For lists of detected and suppressed errors, rerun with: -s
+==40924== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
