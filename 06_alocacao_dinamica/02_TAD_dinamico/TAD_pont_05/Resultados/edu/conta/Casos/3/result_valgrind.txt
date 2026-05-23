@@ -1,0 +1,15 @@
+==41378== Memcheck, a memory error detector
+==41378== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==41378== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==41378== Command: Resultados/edu/conta/prog Resultados/edu/conta/Casos/3
+==41378== Parent PID: 41377
+==41378== 
+==41378== 
+==41378== HEAP SUMMARY:
+==41378==     in use at exit: 0 bytes in 0 blocks
+==41378==   total heap usage: 14 allocs, 14 frees, 8,653 bytes allocated
+==41378== 
+==41378== All heap blocks were freed -- no leaks are possible
+==41378== 
+==41378== For lists of detected and suppressed errors, rerun with: -s
+==41378== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
