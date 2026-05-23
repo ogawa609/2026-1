@@ -1,0 +1,18 @@
+departamento.c: In function ‘CalculaDesvioPadraoDepartamento’:
+departamento.c:132:17: warning: implicit declaration of function ‘pow’ [-Wimplicit-function-declaration]
+  132 |         soma += pow((vetor[i] - depto->media_geral), 2);
+      |                 ^~~
+departamento.c:5:1: note: include ‘<math.h>’ or provide a declaration of ‘pow’
+    4 | #include "departamento.h"
+  +++ |+#include <math.h>
+    5 | 
+departamento.c:132:17: warning: incompatible implicit declaration of built-in function ‘pow’ [-Wbuiltin-declaration-mismatch]
+  132 |         soma += pow((vetor[i] - depto->media_geral), 2);
+      |                 ^~~
+departamento.c:132:17: note: include ‘<math.h>’ or provide a declaration of ‘pow’
+departamento.c:137:12: warning: implicit declaration of function ‘sqrt’ [-Wimplicit-function-declaration]
+  137 |     return sqrt(soma);
+      |            ^~~~
+departamento.c:137:12: note: include ‘<math.h>’ or provide a declaration of ‘sqrt’
+departamento.c:137:12: warning: incompatible implicit declaration of built-in function ‘sqrt’ [-Wbuiltin-declaration-mismatch]
+departamento.c:137:12: note: include ‘<math.h>’ or provide a declaration of ‘sqrt’
