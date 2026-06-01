@@ -1,0 +1,128 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: edu
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
+ - Diretório Resultados/edu criado com sucesso!
+ - Diretório Resultados/edu/produto criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/edu/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/edu/produto.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/produto.h' encontrado!
+ - Arquivo esperado 'Respostas/edu/supermercado.c' não encontrado!
+ - Arquivo esperado 'Respostas/edu/supermercado.h' encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta produto:
+ - Copiando os Casos de teste para a pasta Resultados/edu/produto
+ - Copiando os Includes/produto.h Includes/supermercado.h do professor para a pasta Resultados/edu/produto
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/produto
+ - Removendo o produto.o do professor da pasta Resultados/edu/produto
+ - Copiando o Respostas/edu/produto.c do aluno para a pasta Resultados/edu/produto
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Compilação dos arquivos do aluno na pasta produto ok!
+ - Arquivo de output gerado: Resultados/edu/produto/result_compilation.txt
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta produto:
+ - Gerando o binário prog linkando com o(s) arquivo(s) produto/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/produto/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta produto / Caso 1:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 10:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 11:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/11/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 12:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/12/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 2:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 3:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 4:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 5:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 6:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 7:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 8:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta produto / Caso 9:
+ - Arquivo de output gerado: Resultados/edu/produto/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta produto (máximo 3.00) - 0 de 120 - 0% de 3.00: 0.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: edu
+ - Arquivos Esperados Corretos: 3 de 5
+ - Pastas Compiladas Corretamente: 1 de 1 
+ - Pastas Linkadas Corretamente: 1 de 1
+ - Teste produto
+ - Resultados corretos: 0 de 12
+ - Valgrinds corretos: 12 de 12
+ - Nota de edu para o teste produto: 0
+ - Nota de edu: 0+(0)
+ - Nota de edu: 0
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+

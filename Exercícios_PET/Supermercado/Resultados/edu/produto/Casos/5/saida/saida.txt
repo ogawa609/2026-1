@@ -1,0 +1,4 @@
+ foi cadastrado(a)
+1 -  - 5
+ teve estoque aumentado
+Lucro do supermercado: 0.00

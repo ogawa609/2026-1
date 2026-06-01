@@ -1,0 +1,9 @@
+Arquivos Esperados Corretos: 3 de 5
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste produto
+  - Resultados corretos: 0 de 12
+  - Valgrinds corretos: 12 de 12
+Nota de edu para o teste produto: 0
+Nota de edu: 0+(0)
+Nota de edu: 0

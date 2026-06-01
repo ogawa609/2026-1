@@ -1,0 +1,4 @@
+ foi cadastrado(a)
+Codigo nao cadastrado no supermercado
+ teve estoque aumentado
+Lucro do supermercado: 0.00
