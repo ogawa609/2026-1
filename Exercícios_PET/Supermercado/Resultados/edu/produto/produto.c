@@ -72,7 +72,7 @@ int ObterCodigoProduto (Produto* p)
 */
 void ImprimirNomeProduto (Produto* p)
 {
-    scanf("%s\n",p->nome);
+    printf("%s",p->nome);
 }
 
 /**
