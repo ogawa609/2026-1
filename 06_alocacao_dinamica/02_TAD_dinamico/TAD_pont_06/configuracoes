@@ -3,6 +3,6 @@ Arquivos
 Valgrind
 	desconto=0.5
 Validações
-	#main=3.34
-	#completo=3.33
+	main=3.34
+	completo=3.33
 	matrix_utils=3.33
