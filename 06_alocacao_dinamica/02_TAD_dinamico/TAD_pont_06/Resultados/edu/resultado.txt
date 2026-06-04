@@ -1,0 +1,9 @@
+Arquivos Esperados Corretos: 2 de 3
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste matrix_utils
+  - Resultados corretos: 3 de 3
+  - Valgrinds corretos: 3 de 3
+Nota de edu para o teste matrix_utils: 3.33
+Nota de edu: 0+(3.33)
+Nota de edu: 3.33
