@@ -7,8 +7,8 @@ struct Array{
 
     func_ptr_imprimeDado imprime;
     func_ptr_liberaDado libera;
-    void** lista;
-    int tamanho;
+    void* dado;
+    
 };
 /**
  * Cria um array genérico vazio.
@@ -20,11 +20,8 @@ struct Array{
  */
 tArray **criaArray()
 {
-    tArray* array = malloc(sizeof(tArray));
-    array->tamanho = 0;
-    array->lista = malloc(sizeof(void*));
-    
-
+    tArray** array = malloc(sizeof(tArray*));
+    return array;
 }
 
 /**
@@ -48,7 +45,16 @@ tArray **adicionaDadoArray(
     void *dado,
     func_ptr_imprimeDado imprimeDado,
     func_ptr_liberaDado liberaDado
-);
+)
+{
+    a[*tam]->dado = dado;
+    a[*tam]->imprime = imprimeDado;
+    a[*tam]->libera = liberaDado;
+    *tam ++;
+    a = realloc(a,(*tam +1)*sizeof(tArray*));
+
+    return a;
+}
 
 /**
  * Imprime todos os elementos armazenados no array.
@@ -59,7 +65,13 @@ tArray **adicionaDadoArray(
  * @param a Vetor de elementos do array.
  * @param tam Quantidade de elementos armazenados.
  */
-void imprimeArray(tArray **a, int tam);
+void imprimeArray(tArray **a, int tam)
+{
+    for(int i=0;i<tam;i++)
+    {
+        a[i]->imprime(a[i]->dado);
+    }
+}
 
 /**
  * Libera toda a memória utilizada pelo array.
@@ -73,4 +85,14 @@ void imprimeArray(tArray **a, int tam);
  * @param a Vetor de elementos do array.
  * @param tam Quantidade de elementos armazenados.
  */
-void desalocaArray(tArray **a, int tam);
+void desalocaArray(tArray **a, int tam)
+{
+    for(int i =0;i<tam;i++)
+        a[i]->libera(a[i]->dado);
+
+    for(int i =0;i<tam;i++)
+        free(a[i]);
+
+    free(a);
+
+}
