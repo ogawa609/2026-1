@@ -1,0 +1,4 @@
+veiculo.c: In function ‘getNotaMediaVeiculo’:
+veiculo.c:140:18: warning: assignment to ‘func_ptr_notaMediaVeiculo’ {aka ‘float (*)(void *)’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  140 |     v->notaMedia = (int) media;
+      |                  ^
