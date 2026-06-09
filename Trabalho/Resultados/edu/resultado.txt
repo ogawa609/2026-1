@@ -1,17 +1,9 @@
 Arquivos Esperados Corretos: 6 de 7
-Pastas Compiladas Corretamente: 3 de 3 
-Pastas Linkadas Corretamente: 3 de 3
-Teste avaliacao
-  - Resultados corretos: 10 de 10
-  - Valgrinds corretos: 10 de 10
-Nota de edu para o teste avaliacao: .50
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
 Teste veiculo
   - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
 Nota de edu para o teste veiculo: 2.00
-Teste carro
-  - Resultados corretos: 10 de 10
-  - Valgrinds corretos: 10 de 10
-Nota de edu para o teste carro: .50
-Nota de edu: 0+(.50)+(2.00)+(.50)
-Nota de edu: 3.00
+Nota de edu: 0+(2.00)
+Nota de edu: 2.00

@@ -137,7 +137,6 @@ float getNotaMediaVeiculo(tVeiculo *v)
         media = media/v->quantidade;
     }
 
-    v->notaMedia = (int) media;
     
     return media;
 }

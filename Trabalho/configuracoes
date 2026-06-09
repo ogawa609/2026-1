@@ -5,9 +5,9 @@ Valgrind
 Validações
 	#main=7.0
 	#completo=0.0
-	avaliacao=0.5
+	#avaliacao=0.5
 	veiculo=2.0
-	carro=0.5
+	#carro=0.5
 
 MainAgrupada
 LimiteTempo=15
