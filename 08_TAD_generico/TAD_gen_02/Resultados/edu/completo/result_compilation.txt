@@ -1,0 +1,4 @@
+pacote.c: In function ‘ImprimePacote’:
+pacote.c:74:20: warning: too many arguments for format [-Wformat-extra-args]
+   74 |             printf("%%c",((char*)pac->dado)[i]);
+      |                    ^~~~~

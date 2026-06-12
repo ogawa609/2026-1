@@ -1,0 +1,6 @@
+==24506== Memcheck, a memory error detector
+==24506== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==24506== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==24506== Command: Resultados/edu/pacote/prog Resultados/edu/pacote/Casos/4
+==24506== Parent PID: 24505
+==24506== 
