@@ -70,9 +70,9 @@ tCarro *criaCarro(char *linha)
         str++;
 
     if (atoi(str))
-        c->restricaoAssinatura = premium;
+        c->restricaoAssinatura = PREMIUM;
     else
-        c->restricaoAssinatura = padrao;
+        c->restricaoAssinatura = PADRAO;
 
 
     str = strtok(NULL, ";");
@@ -80,9 +80,9 @@ tCarro *criaCarro(char *linha)
         str++;
 
     if (atoi(str))
-        c->restricaoUsuario = maior18;
+        c->restricaoUsuario = ADULTO;
     else
-        c->restricaoUsuario = menorIdade;
+        c->restricaoUsuario = INFANTIL;
 
 
     str = strtok(NULL, ";");

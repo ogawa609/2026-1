@@ -61,9 +61,9 @@ tMoto *criaMoto(char *linha)
         str++;
 
     if (atoi(str))
-        m->restricaoAssinatura = premium;
+        m->restricaoAssinatura = PREMIUM;
     else
-        m->restricaoAssinatura = padrao;
+        m->restricaoAssinatura = PADRAO;
 
 
     str = strtok(NULL, ";");
@@ -71,9 +71,9 @@ tMoto *criaMoto(char *linha)
         str++;
 
     if (atoi(str))
-        m->restricaoUsuario = maior18;
+        m->restricaoUsuario = ADULTO;
     else
-        m->restricaoUsuario = menorIdade;
+        m->restricaoUsuario = INFANTIL;
 
 
     str = strtok(NULL, ";");
