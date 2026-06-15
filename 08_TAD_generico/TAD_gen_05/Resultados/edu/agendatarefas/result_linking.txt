@@ -1,8 +1,0 @@
-/usr/bin/ld: Resultados/edu/agendatarefas/main.o: na função "main":
-main.c:(.text+0x55): undefined reference to `CriaAgendaDeTarefas'
-/usr/bin/ld: main.c:(.text+0x10c): undefined reference to `CadastraTarefaNaAgenda'
-/usr/bin/ld: main.c:(.text+0x191): undefined reference to `CadastraTarefaNaAgenda'
-/usr/bin/ld: main.c:(.text+0x216): undefined reference to `CadastraTarefaNaAgenda'
-/usr/bin/ld: main.c:(.text+0x273): undefined reference to `ExecutarTarefasDaAgenda'
-/usr/bin/ld: main.c:(.text+0x27f): undefined reference to `DestroiAgendaDeTarefas'
-collect2: error: ld returned 1 exit status
