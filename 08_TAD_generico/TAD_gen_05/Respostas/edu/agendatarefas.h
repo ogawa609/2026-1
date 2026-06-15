@@ -1,6 +1,7 @@
 #ifndef _agendatarefas
 #define _agendatarefas
 
+typedef struct tarefa tTarefa;
 typedef struct agendatarefas tAgendaTarefas;
 
 /**

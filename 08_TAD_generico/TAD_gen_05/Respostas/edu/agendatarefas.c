@@ -3,10 +3,14 @@
 #include <string.h>
 #include "agendatarefas.h"
 
+struct tarefa{
+    void* tarefa;
+    void(*executa)(void*);
+    void (*libera)(void*);
+
+};
  struct agendatarefas{
-    void** tarefas;
-    void** executa;
-    void** libera;
+    tTarefa** tarefas;
     int numTarefas;
 
  };
@@ -22,9 +26,7 @@ tAgendaTarefas* CriaAgendaDeTarefas(int numElem)
     tAgendaTarefas* a = malloc(sizeof(tAgendaTarefas));
 
     a->numTarefas = numElem;
-    a->executa = malloc(numElem*sizeof(void*));
-    a->libera = malloc(numElem*sizeof(void*));
-    a->tarefas = malloc(numElem*sizeof(void*));
+    
 
     return a;
 }
