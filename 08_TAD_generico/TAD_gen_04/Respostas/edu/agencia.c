@@ -98,4 +98,5 @@ void ImprimeDadosAgencia(tAgencia *agencia)
     printf("Numero: %d\n",agencia->num);
     printf("Numero de contas cadastradas: %d\n",VectorSize(agencia->contas));
     printf("Saldo médio: R$%.2f\n",GetSaldoMedioAgencia(agencia));
+    
 }

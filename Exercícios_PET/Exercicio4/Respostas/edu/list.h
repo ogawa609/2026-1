@@ -1,3 +1,6 @@
+#ifndef _LIST_H
+#define _LIST_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "media.h"
@@ -33,3 +36,5 @@ void list_print(List *r);
  * @param r Ponteiro para a estrutura List a ser destruída.
  */
 void list_free(List *r);
+
+#endif

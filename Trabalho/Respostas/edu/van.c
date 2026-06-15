@@ -61,9 +61,9 @@ tVan *criaVan(char *linha)
         str++;
 
     if (atoi(str))
-        v->restricaoAssinatura = premium;
+        v->restricaoAssinatura = PREMIUM;
     else
-        v->restricaoAssinatura = padrao;
+        v->restricaoAssinatura = PADRAO;
 
 
     str = strtok(NULL, ";");
@@ -71,9 +71,9 @@ tVan *criaVan(char *linha)
         str++;
 
     if (atoi(str))
-        v->restricaoUsuario = maior18;
+        v->restricaoUsuario = ADULTO;
     else
-        v->restricaoUsuario = menorIdade;
+        v->restricaoUsuario = INFANTIL;
 
 
     str = strtok(NULL, ";");
