@@ -303,6 +303,8 @@ void CadastrarVeiculo(tGerenciador* g)
     }
 }
 
+
+
 void BuscaVeiculosGerenciador(tGerenciador* g, char* comando) //Busca lista veiculos baseado no nome e numero de assentos
 {
 
@@ -350,7 +352,7 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando) //Busca lista veic
                  bancos = getAssentosVeiculo(v);
             
             
-                if(bancos==assentos && v!=NULL)
+                if(bancos>=assentos && v!=NULL)
                 {
                     printf("%d - ",indice);
                     printaVeiculo(v);
@@ -358,10 +360,11 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando) //Busca lista veic
                     int ano = getAnoVeiculo(v);
                     char* fab = getMarcaVeiculo(v);
                     char* condutor = getNomeMotorista(g->motoristas[i]);
+                    char* cnpj = getCnpjMotorista(g->motoristas[i]);
                     float nota = getNotaMediaVeiculo(v);
                     flag = 0;
 
-                    printf("%d; %.2f; %d; %s; (%s); %.2f\n",assentos,km,ano,fab,condutor,nota);
+                    printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",assentos,km,ano,fab,cnpj,condutor,nota);
                 }
             
         }
@@ -397,7 +400,7 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando) //Busca lista veic
                 int bancos = getAssentosVeiculo(v);
                 TipoAssinatura* vip = getRestricaoAssinaturaVeiculo(v);
                 
-                if(bancos==assentos && vip==PREMIUM)
+                if(bancos>=assentos && vip==PREMIUM)
                 {
                     printf("%d - ",indice);
                     printaVeiculo(v);
@@ -405,10 +408,11 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando) //Busca lista veic
                     int ano = getAnoVeiculo(v);
                     char* fab = getMarcaVeiculo(v);
                     char* condutor = getNomeMotorista(g->motoristas[i]);
+                     char* cnpj = getCnpjMotorista(g->motoristas[i]);
                     float nota = getNotaMediaVeiculo(v);
                     flag = 0;
 
-                    printf("%d; %.2f; %d; %s; %s; %.2f\n",assentos,km,ano,fab,condutor,nota);
+                    printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",assentos,km,ano,fab,cnpj,condutor,nota);
                 }
 
 
@@ -426,6 +430,16 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando) //Busca lista veic
     else if(strcmp(comando,"COCD")==0)
     {
 
+        for(int i=0;i<g->qntMotoristas;i++)
+        {
+            char *condutor = getNomeMotorista(g->motoristas[i]);
+
+            if(strcmp(nome,condutor)==0)
+            {
+                printf("# - TIPO; ID; NOME; ASSENTOS; QUILOMETRAGEM; ANO; FABRICANTE; CONDUTOR; AVALIACAO MEDIA\n");
+
+            }
+        }
     }
     else if(strcmp(comando,"COCDP")==0)
     {
