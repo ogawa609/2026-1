@@ -1,0 +1,7 @@
+tAmbiente.c: In function ‘criaAmbiente’:
+tAmbiente.c:38:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   38 |     for(int i=0;i<10;i++)
+      |     ^~~
+tAmbiente.c:41:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   41 |         for(int i=0;i<10;i++)
+      |         ^~~

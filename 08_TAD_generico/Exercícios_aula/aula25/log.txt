@@ -1,0 +1,325 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: edu
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
+ - Diretório Resultados/edu criado com sucesso!
+ - Diretório Resultados/edu/tMonitorador criado com sucesso!
+ - Diretório Resultados/edu/tAmbiente criado com sucesso!
+ - Diretório Resultados/edu/tEventoMovimento criado com sucesso!
+ - Diretório Resultados/edu/main criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/edu/main.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/tAmbiente.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/tAmbiente.h' encontrado!
+ - Arquivo esperado 'Respostas/edu/tEventoMovimento.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/tEventoMovimento.h' encontrado!
+ - Arquivo esperado 'Respostas/edu/tMonitorador.c' encontrado!
+ - Arquivo esperado 'Respostas/edu/tMonitorador.h' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta tMonitorador:
+ - Copiando os Casos de teste para a pasta Resultados/edu/tMonitorador
+ - Copiando os Includes/tAmbiente.h Includes/tEventoMovimento.h Includes/tMonitorador.h do professor para a pasta Resultados/edu/tMonitorador
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/tMonitorador
+	 - Removendo o tMonitorador.o do professor da pasta Resultados/edu/tMonitorador
+	 - Copiando o Respostas/edu/tMonitorador.c do aluno para a pasta Resultados/edu/tMonitorador
+ - Pasta tAmbiente:
+ - Copiando os Casos de teste para a pasta Resultados/edu/tAmbiente
+ - Copiando os Includes/tAmbiente.h Includes/tEventoMovimento.h Includes/tMonitorador.h do professor para a pasta Resultados/edu/tAmbiente
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/tAmbiente
+	 - Removendo o tAmbiente.o do professor da pasta Resultados/edu/tAmbiente
+	 - Copiando o Respostas/edu/tAmbiente.c do aluno para a pasta Resultados/edu/tAmbiente
+ - Pasta tEventoMovimento:
+ - Copiando os Casos de teste para a pasta Resultados/edu/tEventoMovimento
+ - Copiando os Includes/tAmbiente.h Includes/tEventoMovimento.h Includes/tMonitorador.h do professor para a pasta Resultados/edu/tEventoMovimento
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/tEventoMovimento
+	 - Removendo o tEventoMovimento.o do professor da pasta Resultados/edu/tEventoMovimento
+	 - Copiando o Respostas/edu/tEventoMovimento.c do aluno para a pasta Resultados/edu/tEventoMovimento
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/edu/main
+ - Copiando os Includes/tAmbiente.h Includes/tEventoMovimento.h Includes/tMonitorador.h do professor para a pasta Resultados/edu/main
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/main
+	 - Removendo o main.o do professor da pasta Resultados/edu/main
+	 - Copiando o Respostas/edu/main.c do aluno para a pasta Resultados/edu/main
+ - Copiando Arquivos Extras do Aluno:
+	 - Copiando Respostas/edu/tClique.c para Resultados/edu/main
+ - Copiando Respostas/edu/tClique.h para Resultados/edu/main
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+	 - Compilando a pasta tMonitorador do aluno, gerando os .o's
+	 - Compilação dos arquivos do aluno na pasta tMonitorador ok!
+	 - Arquivo de output gerado: Resultados/edu/tMonitorador/result_compilation.txt
+	 - Compilando a pasta tAmbiente do aluno, gerando os .o's
+	 - Compilação dos arquivos do aluno na pasta tAmbiente ok!
+	 - Arquivo de output gerado: Resultados/edu/tAmbiente/result_compilation.txt
+	 - Compilando a pasta tEventoMovimento do aluno, gerando os .o's
+	 - Compilação dos arquivos do aluno na pasta tEventoMovimento ok!
+	 - Arquivo de output gerado: Resultados/edu/tEventoMovimento/result_compilation.txt
+	 - Compilando a pasta main do aluno, gerando os .o's
+	 - Compilação dos arquivos do aluno na pasta main ok!
+	 - Arquivo de output gerado: Resultados/edu/main/result_compilation.txt
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta tMonitorador:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tMonitorador/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/tMonitorador/result_linking.txt
+ - Pasta tAmbiente:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tAmbiente/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/tAmbiente/result_linking.txt
+ - Pasta tEventoMovimento:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tEventoMovimento/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/tEventoMovimento/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/edu/main/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta tMonitorador / Caso 01:
+ - Arquivo de output gerado: Resultados/edu/tMonitorador/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 12, frees: 12, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tMonitorador / Caso 02:
+ - Arquivo de output gerado: Resultados/edu/tMonitorador/Casos/02/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 12, frees: 12, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tMonitorador / Caso 03:
+ - Arquivo de output gerado: Resultados/edu/tMonitorador/Casos/03/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 12, frees: 12, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tMonitorador / Caso 04:
+ - Arquivo de output gerado: Resultados/edu/tMonitorador/Casos/04/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tMonitorador / Caso 05:
+ - Arquivo de output gerado: Resultados/edu/tMonitorador/Casos/05/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 12, frees: 12, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tMonitorador / Caso 06:
+ - Arquivo de output gerado: Resultados/edu/tMonitorador/Casos/06/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 12, frees: 12, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Nota para a pasta tMonitorador (máximo 4.0) - 9.60 de 9.60 - 100.00% de 4.0: 4.00.
+ -----
+ - Pasta tAmbiente / Caso 01:
+ - Arquivo de output gerado: Resultados/edu/tAmbiente/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tAmbiente / Caso 02:
+ - Arquivo de output gerado: Resultados/edu/tAmbiente/Casos/02/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tAmbiente / Caso 03:
+ - Arquivo de output gerado: Resultados/edu/tAmbiente/Casos/03/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tAmbiente / Caso 04:
+ - Arquivo de output gerado: Resultados/edu/tAmbiente/Casos/04/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 32, frees: 32, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tAmbiente / Caso 05:
+ - Arquivo de output gerado: Resultados/edu/tAmbiente/Casos/05/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tAmbiente / Caso 06:
+ - Arquivo de output gerado: Resultados/edu/tAmbiente/Casos/06/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Nota para a pasta tAmbiente (máximo 1.0) - 9.60 de 9.60 - 100.00% de 1.0: 1.00.
+ -----
+ - Pasta tEventoMovimento / Caso 01:
+ - Arquivo de output gerado: Resultados/edu/tEventoMovimento/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tEventoMovimento / Caso 02:
+ - Arquivo de output gerado: Resultados/edu/tEventoMovimento/Casos/02/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tEventoMovimento / Caso 03:
+ - Arquivo de output gerado: Resultados/edu/tEventoMovimento/Casos/03/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tEventoMovimento / Caso 04:
+ - Arquivo de output gerado: Resultados/edu/tEventoMovimento/Casos/04/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tEventoMovimento / Caso 05:
+ - Arquivo de output gerado: Resultados/edu/tEventoMovimento/Casos/05/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta tEventoMovimento / Caso 06:
+ - Arquivo de output gerado: Resultados/edu/tEventoMovimento/Casos/06/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Nota para a pasta tEventoMovimento (máximo 2.0) - 9.60 de 9.60 - 100.00% de 2.0: 2.00.
+ -----
+ - Pasta main / Caso 01:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta main / Caso 02:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/02/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta main / Caso 03:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/03/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta main / Caso 04:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/04/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta main / Caso 05:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/05/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Pasta main / Caso 06:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/06/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Comparando saida.txt do aluno e do gabarito...
+	 - As saídas coincidem!
+	 - Resultado para o saida.txt: Ok! Peso: 10
+ - Soma dos pesos dos arquivos: 10.0 (soma total) = 10.00 de 10.0 pontos.
+	 - Nota para o Caso (máximo: 1.60): 1.60 
+ - Nota para a pasta main (máximo 3.0) - 9.60 de 9.60 - 100.00% de 3.0: 3.00.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: edu
+ - Arquivos Esperados Corretos: 7 de 7
+ - Pastas Compiladas Corretamente: 4 de 4 
+ - Pastas Linkadas Corretamente: 4 de 4
+ - Teste tMonitorador
+ - Resultados corretos: 6 de 24
+ - Valgrinds corretos: 6 de 6
+	 - Nota de edu para o teste tMonitorador: 4.00
+ - Teste tAmbiente
+ - Resultados corretos: 6 de 24
+ - Valgrinds corretos: 6 de 6
+	 - Nota de edu para o teste tAmbiente: 1.00
+ - Teste tEventoMovimento
+ - Resultados corretos: 6 de 24
+ - Valgrinds corretos: 6 de 6
+	 - Nota de edu para o teste tEventoMovimento: 2.00
+ - Teste main
+ - Resultados corretos: 6 de 24
+ - Valgrinds corretos: 6 de 6
+	 - Nota de edu para o teste main: 3.00
+ - Nota de edu: 0+(4.00)+(2.00)+(3.00)+(1.00)
+ - Nota de edu: 10.00
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+

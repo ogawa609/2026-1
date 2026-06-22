@@ -1,0 +1,21 @@
+Arquivos Esperados Corretos: 7 de 7
+Pastas Compiladas Corretamente: 4 de 4 
+Pastas Linkadas Corretamente: 4 de 4
+Teste tMonitorador
+  - Resultados corretos: 6 de 24
+  - Valgrinds corretos: 6 de 6
+Nota de edu para o teste tMonitorador: 4.00
+Teste tAmbiente
+  - Resultados corretos: 6 de 24
+  - Valgrinds corretos: 6 de 6
+Nota de edu para o teste tAmbiente: 1.00
+Teste tEventoMovimento
+  - Resultados corretos: 6 de 24
+  - Valgrinds corretos: 6 de 6
+Nota de edu para o teste tEventoMovimento: 2.00
+Teste main
+  - Resultados corretos: 6 de 24
+  - Valgrinds corretos: 6 de 6
+Nota de edu para o teste main: 3.00
+Nota de edu: 0+(4.00)+(2.00)+(3.00)+(1.00)
+Nota de edu: 10.00
