@@ -8,7 +8,7 @@ ALUNO: edu
 
 CRIANDO O DIRETÓRIO DE RESULTADO PARA edu:
  - Diretório Resultados/edu criado com sucesso!
- - Diretório Resultados/edu/carro criado com sucesso!
+ - Diretório Resultados/edu/main criado com sucesso!
  - Arquivos criados: ok!
 
 CHECKANDO OS ARQUIVOS DO ALUNO:
@@ -16,92 +16,101 @@ CHECKANDO OS ARQUIVOS DO ALUNO:
  - Arquivo esperado 'Respostas/edu/avaliacao.h' encontrado!
  - Arquivo esperado 'Respostas/edu/carro.c' encontrado!
  - Arquivo esperado 'Respostas/edu/carro.h' encontrado!
- - Arquivo esperado 'Respostas/edu/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/edu/main.c' encontrado!
  - Arquivo esperado 'Respostas/edu/veiculo.c' encontrado!
  - Arquivo esperado 'Respostas/edu/veiculo.h' encontrado!
- - Arquivos esperados enviados: Faltando!
+ - Arquivos esperados enviados: Ok!
 
 COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
- - Pasta carro:
- - Copiando os Casos de teste para a pasta Resultados/edu/carro
- - Copiando os Includes/avaliacao.h Includes/carro.h Includes/veiculo.h do professor para a pasta Resultados/edu/carro
- - Copiando os Includes/*.o do professor para a pasta Resultados/edu/carro
- - Removendo o carro.o do professor da pasta Resultados/edu/carro
- - Copiando o Respostas/edu/carro.c do aluno para a pasta Resultados/edu/carro
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/edu/main
+ - Copiando os Includes/avaliacao.h Includes/carro.h Includes/veiculo.h do professor para a pasta Resultados/edu/main
+ - Copiando os Includes/*.o do professor para a pasta Resultados/edu/main
+ - Removendo o main.o do professor da pasta Resultados/edu/main
+ - Copiando o Respostas/edu/main.c do aluno para a pasta Resultados/edu/main
  - Copiando Arquivos Extras do Aluno:
- - Copiando Respostas/edu/corrida.h para Resultados/edu/carro
- - Copiando Respostas/edu/data.h para Resultados/edu/carro
- - Copiando Respostas/edu/moto.h para Resultados/edu/carro
- - Copiando Respostas/edu/motorista.h para Resultados/edu/carro
- - Copiando Respostas/edu/TaxUfes.h para Resultados/edu/carro
- - Copiando Respostas/edu/usuario.h para Resultados/edu/carro
- - Copiando Respostas/edu/util.h para Resultados/edu/carro
- - Copiando Respostas/edu/van.h para Resultados/edu/carro
+ - Copiando Respostas/edu/corrida.c para Resultados/edu/main
+ - Copiando Respostas/edu/data.c para Resultados/edu/main
+ - Copiando Respostas/edu/moto.c para Resultados/edu/main
+ - Copiando Respostas/edu/motorista.c para Resultados/edu/main
+ - Copiando Respostas/edu/TaxUfes.c para Resultados/edu/main
+ - Copiando Respostas/edu/usuario.c para Resultados/edu/main
+ - Copiando Respostas/edu/util.c para Resultados/edu/main
+ - Copiando Respostas/edu/van.c para Resultados/edu/main
+ - Copiando Respostas/edu/corrida.h para Resultados/edu/main
+ - Copiando Respostas/edu/data.h para Resultados/edu/main
+ - Copiando Respostas/edu/leitura.h para Resultados/edu/main
+ - Copiando Respostas/edu/moto.h para Resultados/edu/main
+ - Copiando Respostas/edu/motorista.h para Resultados/edu/main
+ - Copiando Respostas/edu/TaxUfes.h para Resultados/edu/main
+ - Copiando Respostas/edu/usuario.h para Resultados/edu/main
+ - Copiando Respostas/edu/util.h para Resultados/edu/main
+ - Copiando Respostas/edu/van.h para Resultados/edu/main
  - Arquivos copiados: ok!
 
 COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
- - Compilação dos arquivos do aluno na pasta carro ok!
- - Arquivo de output gerado: Resultados/edu/carro/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta main ok!
+ - Arquivo de output gerado: Resultados/edu/main/result_compilation.txt
  - Arquivos Compilados: ok!
 
 LINKANDO OS ARQUIVOS COMPILADOS:
- - Pasta carro:
- - Gerando o binário prog linkando com o(s) arquivo(s) carro/*.o
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
  - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
- - Arquivo de output gerado: Resultados/edu/carro/result_linking.txt
+ - Arquivo de output gerado: Resultados/edu/main/result_linking.txt
 
 EXECUTANDO O VALGRIND EM CADA CASO:
- - Pasta carro / Caso 01:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/01/result_valgrind.txt.
- - Valgrind: Ok! allocs: 148, frees: 148, errors: 0 | Desconto do valgrind: 0.0%
+ - Pasta main / Caso 01:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 122, frees: 122, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 02:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/02/result_valgrind.txt.
+ - Pasta main / Caso 02:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/02/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 65, frees: 65, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 03:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/03/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 122, frees: 122, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 04:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/04/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 50, frees: 50, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 05:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/05/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 75, frees: 75, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 06:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/06/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 37, frees: 37, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 07:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/07/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 63, frees: 63, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 08:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/08/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 50, frees: 50, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 09:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/09/result_valgrind.txt.
  - Valgrind: Ok! allocs: 104, frees: 104, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 03:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/03/result_valgrind.txt.
- - Valgrind: Ok! allocs: 325, frees: 325, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 04:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/04/result_valgrind.txt.
- - Valgrind: Ok! allocs: 98, frees: 98, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 05:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/05/result_valgrind.txt.
- - Valgrind: Ok! allocs: 241, frees: 241, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 06:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/06/result_valgrind.txt.
- - Valgrind: Ok! allocs: 103, frees: 103, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 07:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/07/result_valgrind.txt.
- - Valgrind: Ok! allocs: 150, frees: 150, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 08:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/08/result_valgrind.txt.
- - Valgrind: Ok! allocs: 134, frees: 134, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 09:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/09/result_valgrind.txt.
- - Valgrind: Ok! allocs: 176, frees: 176, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Pasta carro / Caso 10:
- - Arquivo de output gerado: Resultados/edu/carro/Casos/10/result_valgrind.txt.
- - Valgrind: Ok! allocs: 186, frees: 186, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Nota para a pasta carro (máximo 0.5) - 100.00 de 100 - 100.00% de 0.5: .50.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 10:
+ - Arquivo de output gerado: Resultados/edu/main/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 82, frees: 82, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 7.0) - 20.00 de 100 - 20.00% de 7.0: 1.40.
  -----
 
 #######################################
@@ -110,15 +119,15 @@ RESULTADOS FINAIS
 
 ----------------------------------------------------------------------------
 Aluno: edu
- - Arquivos Esperados Corretos: 6 de 7
+ - Arquivos Esperados Corretos: 7 de 7
  - Pastas Compiladas Corretamente: 1 de 1 
  - Pastas Linkadas Corretamente: 1 de 1
- - Teste carro
- - Resultados corretos: 10 de 10
+ - Teste main
+ - Resultados corretos: 2 de 10
  - Valgrinds corretos: 10 de 10
- - Nota de edu para o teste carro: .50
- - Nota de edu: 0+(.50)
- - Nota de edu: .50
+ - Nota de edu para o teste main: 1.40
+ - Nota de edu: 0+(1.40)
+ - Nota de edu: 1.40
 
 ----------------------------------------------------------------------------
 
