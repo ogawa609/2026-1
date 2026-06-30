@@ -22,10 +22,11 @@ void AdicionaVeiculoEmMotorista(tMotorista* m, tVeiculo*v);
 int ComparaCnpjMotorista(tMotorista* m, char* cnpj);
 tVeiculo* BuscaVeiculoemMotorista(tMotorista* m, char* placa);
 char* getCnpjMotorista(tMotorista* m);
-tVeiculo* BuscaNomeVeiculoemMotorista(tMotorista* m, char* name);
+tVeiculo* BuscaNomeVeiculoemMotorista(tMotorista* m, char* name, int i);
 int getQtdVeiculosMotorista(tMotorista* m);
 tVeiculo* getVeiculoMotorista(tMotorista* m, int i);
 int ImprimeVeiculosMotorista(tMotorista* m, int indice,TipoAssinatura a, TipoUsuario i);
+void OrdenarVeiculosPeloIdMotorista(tMotorista* m);
 
 
 #endif

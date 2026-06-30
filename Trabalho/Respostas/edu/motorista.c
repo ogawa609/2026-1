@@ -191,17 +191,12 @@ tVeiculo* BuscaVeiculoemMotorista(tMotorista* m, char* placa)
     return NULL;
 }
 
-tVeiculo* BuscaNomeVeiculoemMotorista(tMotorista* m, char* name)
+tVeiculo* BuscaNomeVeiculoemMotorista(tMotorista* m, char* name,int i)
 {
-    for(int i =0;i<m->qntVeiculos;i++)
-    {
-        char* nome = getNomeVeiculo(m->veiculos[i]);
-       
+    char* nome = getNomeVeiculo(m->veiculos[i]);
 
-        if(strstr(nome,name)!=NULL)
-
-            return m->veiculos[i];
-    }
+    if(strstr(nome,name)!=NULL)
+        return m->veiculos[i];
 
     return NULL;
 }
@@ -240,6 +235,27 @@ int ImprimeVeiculosMotorista(tMotorista* m, int indice,TipoAssinatura a, TipoUsu
     }
 
     return indice;
+}
+
+void OrdenarVeiculosPeloIdMotorista(tMotorista* m)
+{
+    for(int i=0;i<m->qntVeiculos;i++)
+    {
+        for(int j=i+1;j<m->qntVeiculos;j++)
+        {
+            char* id1 = getCodVeiculo(m->veiculos[i]);
+            char* id2 = getCodVeiculo(m->veiculos[j]);
+
+            if(strcmp(id1,id2)>0)
+            {
+                tVeiculo* temp = m->veiculos[i];
+                m->veiculos[i] = m->veiculos[j];
+                m->veiculos[j] = temp;
+            }
+        }
+
+        
+    }
 }
 
 

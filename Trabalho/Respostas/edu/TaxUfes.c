@@ -347,37 +347,44 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
     TipoUsuario restricaoUsuario = getRestricaoIdadeUsuario(user);
 
     // COMANDOS NORMAIS 
-
+    int encontrou = 0;
     if(strcmp(comando,"COC")==0 ||
        strcmp(comando,"COM")==0 ||
        strcmp(comando,"COV")==0)
     {
         int indice = 1;
-        int encontrou = 0;
+        
 
         printf("# - TIPO; ID; NOME; ASSENTOS; QUILOMETRAGEM; ANO; FABRICANTE; CONDUTOR; AVALIACAO MEDIA\n");
 
         for(int i = 0; i < g->qntMotoristas; i++)
         {
-            tVeiculo* v = BuscaNomeVeiculoemMotorista(g->motoristas[i], nome);
+            OrdenarVeiculosPeloIdMotorista(g->motoristas[i]);
 
-            if(v != NULL &&
-               getAssentosVeiculo(v) >= assentos)
+            for(int j=0;j<getQtdVeiculosMotorista(g->motoristas[i]);j++)
             {
-                TipoUsuario restricaoVeiculo =
-                    getRestricaoIdadeVeiculo(v);
+                tVeiculo* v = BuscaNomeVeiculoemMotorista(g->motoristas[i], nome,j);
 
-                TipoAssinatura assinaturaVeiculo =
-                    getRestricaoAssinaturaVeiculo(v);
-
-                if(UsuarioPodeUsarVeiculo(restricaoUsuario,restricaoVeiculo) &&
-                   assinaturaVeiculo == PADRAO)
+                if(v != NULL && getAssentosVeiculo(v) >= assentos)
                 {
-                    printf("%d - ", indice++);
+                    TipoUsuario restricaoVeiculo = getRestricaoIdadeVeiculo(v);
 
-                    printaVeiculo(v);
+                    TipoAssinatura assinaturaVeiculo = getRestricaoAssinaturaVeiculo(v);
 
-                    printf("%d; %.2f; %d; %s; %s (%s); ",
+                    if(UsuarioPodeUsarVeiculo(restricaoUsuario,restricaoVeiculo) && assinaturaVeiculo == PADRAO)
+                    {
+                        printf("%d - ", indice);
+                        indice++;
+
+                        char tip = getTipoVeiculoLetra(v);
+                        if(tip=='C')
+                            printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='M')
+                            printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='V')
+                            printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+
+                        printf("%d; %.2f; %d; %s; %s (%s); ",
                            getAssentosVeiculo(v),
                            getKmVeiculo(v),
                            getAnoVeiculo(v),
@@ -387,7 +394,8 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
                            imprimeFloatBr2(getNotaMediaVeiculo(v));
                            printf("\n");
 
-                    encontrou = 1;
+                        encontrou = 1;
+                    }
                 }
             }
         }
@@ -419,21 +427,30 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
 
         for(int i = 0; i < g->qntMotoristas; i++)
         {
-            tVeiculo* v = BuscaNomeVeiculoemMotorista(g->motoristas[i], nome);
+            OrdenarVeiculosPeloIdMotorista(g->motoristas[i]);
 
-            if(v != NULL &&
-               getAssentosVeiculo(v) >= assentos)
+            for(int j=0;j< getQtdVeiculosMotorista(g->motoristas[i]);j++)
             {
-                TipoAssinatura assinaturaVeiculo =
-                    getRestricaoAssinaturaVeiculo(v);
+                tVeiculo* v = BuscaNomeVeiculoemMotorista(g->motoristas[i], nome,j);
 
-                if(assinaturaVeiculo == PREMIUM)
+                if(v != NULL && getAssentosVeiculo(v) >= assentos)
                 {
-                    printf("%d - ", indice++);
+                    TipoAssinatura assinaturaVeiculo = getRestricaoAssinaturaVeiculo(v);
 
-                    printaVeiculo(v);
+                    if(assinaturaVeiculo == PREMIUM)
+                    {
+                        printf("%d - ", indice);
+                        indice++;
 
-                    printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",
+                        char tip = getTipoVeiculoLetra(v);
+                        if(tip=='C')
+                            printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='M')
+                            printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='V')
+                            printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+
+                        printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",
                            getAssentosVeiculo(v),
                            getKmVeiculo(v),
                            getAnoVeiculo(v),
@@ -442,7 +459,8 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
                            getNomeMotorista(g->motoristas[i]),
                            getNotaMediaVeiculo(v));
 
-                    encontrou = 1;
+                        encontrou = 1;
+                    }
                 }
             }
         }
@@ -486,7 +504,13 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
                         {
                             printf("%d - ", indice++);
 
-                            printaVeiculo(v);
+                            char tip = getTipoVeiculoLetra(v);
+                        if(tip=='C')
+                            printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='M')
+                            printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='V')
+                            printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
 
                             printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",
                                    getAssentosVeiculo(v),
@@ -553,7 +577,13 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
                         {
                             printf("%d - ", indice++);
 
-                            printaVeiculo(v);
+                            char tip = getTipoVeiculoLetra(v);
+                        if(tip=='C')
+                            printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='M')
+                            printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        else if(tip=='V')
+                            printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
 
                             printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",
                                    getAssentosVeiculo(v),
