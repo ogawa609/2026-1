@@ -56,7 +56,15 @@ int getTempoCorrida(tCorrida* c)
 void ImprimeCorrida(tCorrida* c,int indice)
 {
     printf("%d - ",indice);
-    printaVeiculo(c->veiculo);
+    
+    char tip = getTipoVeiculoLetra(c->veiculo);
+    if(tip=='C')
+             printf("CARRO #%s; %s; ",getCodVeiculo(c->veiculo),getNomeVeiculo(c->veiculo));
+    else if(tip=='M')
+            printf("MOTO #%s; %s; ",getCodVeiculo(c->veiculo),getNomeVeiculo(c->veiculo));
+    else if(tip=='V')
+            printf("VAN #%s; %s; ",getCodVeiculo(c->veiculo),getNomeVeiculo(c->veiculo));
+
     imprimeDuracaoCorrida(c->duracao);
     printf("; %s; %s; ",c->origem,c->destino);
     ImprimeData(c->dataMarcacao);

@@ -2,8 +2,8 @@ Arquivos Esperados Corretos: 7 de 7
 Pastas Compiladas Corretamente: 1 de 1 
 Pastas Linkadas Corretamente: 1 de 1
 Teste main
-  - Resultados corretos: 2 de 10
-  - Valgrinds corretos: 7 de 10
-Nota de edu para o teste main: 1.40
-Nota de edu: 0+(1.40)
-Nota de edu: 1.40
+  - Resultados corretos: 6 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de edu para o teste main: 4.20
+Nota de edu: 0+(4.20)
+Nota de edu: 4.20

@@ -434,7 +434,7 @@ void AdicionaCorridaHistoricoUsuario(tUsuario* user, tCorrida* realizada)
 {
     user->corridasRealizadas[user->numCorridasRealizadas] = realizada;
 
-    user->corridasRealizadas++;
+    user->numCorridasRealizadas++;
 
     user->corridasRealizadas = realloc(user->corridasRealizadas,(user->numCorridasRealizadas+1)*sizeof(tCorrida*));
 }

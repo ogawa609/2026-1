@@ -77,28 +77,28 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 04:
  - Arquivo de output gerado: Resultados/edu/main/Casos/04/result_valgrind.txt.
  - Valgrind: Ok! allocs: 60, frees: 60, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 05:
  - Arquivo de output gerado: Resultados/edu/main/Casos/05/result_valgrind.txt.
- - Valgrind: Ok! allocs: 105, frees: 105, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 100, frees: 100, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 06:
  - Arquivo de output gerado: Resultados/edu/main/Casos/06/result_valgrind.txt.
  - Valgrind: Ok! allocs: 47, frees: 47, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 07:
  - Arquivo de output gerado: Resultados/edu/main/Casos/07/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 83, frees: 68, errors: 5 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 83, frees: 83, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 08:
  - Arquivo de output gerado: Resultados/edu/main/Casos/08/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 69, frees: 59, errors: 4 | Desconto do valgrind 50.00%
+ - Valgrind: Ok! allocs: 69, frees: 69, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 09:
  - Arquivo de output gerado: Resultados/edu/main/Casos/09/result_valgrind.txt.
  - Valgrind: Ok! allocs: 104, frees: 104, errors: 0 | Desconto do valgrind: 0.0%
@@ -106,10 +106,10 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 10:
  - Arquivo de output gerado: Resultados/edu/main/Casos/10/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 97, frees: 12, errors: 3 | Desconto do valgrind 50.00%
+ - Valgrind: Ok! allocs: 106, frees: 106, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta main (máximo 7.0) - 20.00 de 100 - 20.00% de 7.0: 1.40.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 7.0) - 60.00 de 100 - 60.00% de 7.0: 4.20.
  -----
 
 #######################################
@@ -122,11 +122,11 @@ Aluno: edu
  - Pastas Compiladas Corretamente: 1 de 1 
  - Pastas Linkadas Corretamente: 1 de 1
  - Teste main
- - Resultados corretos: 2 de 10
- - Valgrinds corretos: 7 de 10
- - Nota de edu para o teste main: 1.40
- - Nota de edu: 0+(1.40)
- - Nota de edu: 1.40
+ - Resultados corretos: 6 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de edu para o teste main: 4.20
+ - Nota de edu: 0+(4.20)
+ - Nota de edu: 4.20
 
 ----------------------------------------------------------------------------
 

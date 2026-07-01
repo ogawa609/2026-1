@@ -182,7 +182,7 @@ tMotorista* BuscarMotoristaGerenciador(tGerenciador* g, char* cnpj)
 
 void CadastrarVeiculo(tGerenciador* g)
 {
-    char cnpj[MAX_CNPJ];
+    char cnpj[MAX_CNPJ+1];
     scanf("%s",cnpj);
 
     tMotorista* driver = BuscarMotoristaGerenciador(g, cnpj);
@@ -640,7 +640,7 @@ void ImprimirListaCorridasUsuario(tGerenciador* g,tUsuario* user)
         return;
     }
 
-    printf("LISTA DE CORRIDA:\n");
+    printf("LISTA DE CORRIDAS\n");
 
     int tempo = 0;
     for(int i = 0;i<getQtdCorridasUsuario(user);i++)
@@ -658,7 +658,7 @@ void ImprimirListaCorridasUsuario(tGerenciador* g,tUsuario* user)
 
 void RelatorioListaCorridasUsuario(tGerenciador* g)
 {
-    char cpf[MAX_CPF];
+    char cpf[MAX_CPF+1];
     scanf("%s",cpf);
     tUsuario* user = NULL;
 
@@ -687,9 +687,11 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 {
     char cpf[MAX_CPF+1];
     char cod[MAX_COD_VEICULO+1];
-    scanf("%s #%s",cpf,cod);
-   
 
+    scanf("%s",cpf);
+    getchar();
+    getchar();
+    scanf("%s",cod);
 
     char origem[MAX_ENDERECO+1];
     char destino[MAX_ENDERECO+1];
@@ -716,7 +718,7 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 
     if(user==NULL)
     {
-        printf("O USUARIO %s NAO ESTA CADASTRADO\n",cpf);
+        printf("CPF NAO CADASTRADO! OPERACAO NAO PERMITIDA!\n");
         return;
     }
 
@@ -734,8 +736,12 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 
     if(veic==NULL)
     {
-        printf("O VEICULO %s NAO ESTA CADASTRADO!\n",cod);
-        ImprimirListaCorridasUsuario(g,user);
+        printf("O VEICULO #%s NAO ESTA CADASTRADO!\n",cod);
+        
+        return;
+    }
+    else if(VerificaVeiculoExisteCorridaUsuario(user,cod))
+    {
         return;
     }
 
@@ -747,8 +753,7 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 
     if(!UsuarioPodeUsarVeiculo(idade,getRestricaoIdadeVeiculo(veic)))
     {
-        printf("NAO EH POSSIVEL ADICIONAR O VEICULO %s A CONTA INFANTIL DO CPF %s!\n",cod,getCartaoUsuario(user));
-        ImprimirListaCorridasUsuario(g,user);
+        printf("NAO EH POSSIVEL ADICIONAR O VEICULO #%s A CONTA INFANTIL DO CPF %s!\n",cod,getCpfUsuario(user));
         return;
     }
 
@@ -756,15 +761,15 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 
     if(assentos>assentosVeic)
     {
-        printf("O VEICULO %s NAO ADMITE A QUANTIDADE DE ASSENTOS REQUISITADA!\n",cod);
-        ImprimirListaCorridasUsuario(g,user);
+        printf("O VEICULO #%s NAO ADMITE A QUANTIDADE DE ASSENTOS REQUISITADA!\n",cod);
+        
         return;
     }
 
     if(assinatura==PADRAO && assinVeic == PREMIUM)
     {
-        printf("NAO EH POSSIVEL ADICIONAR O VEICULO PREMIUM %s A CONTA PADRAO DO CPF %s!\n",cod,cpf);
-        ImprimirListaCorridasUsuario(g,user);
+        printf("NAO EH POSSIVEL ADICIONAR O VEICULO PREMIUM #%s A CONTA PADRAO DO CPF %s!\n",cod,cpf);
+        
         return;
     }
 
@@ -777,10 +782,14 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 
 void RemoveCorridasLista(tGerenciador* g)
 {
-    char cpf[MAX_CPF];
-    char cod[MAX_COD_VEICULO];
+    char cpf[MAX_CPF+1];
+    char cod[MAX_COD_VEICULO+1];
     scanf("%s",cpf);
+    getchar();
+    getchar();
     scanf("%s",cod);
+
+    
 
     tVeiculo* veiculo = NULL;
     tUsuario* user = NULL;
@@ -796,7 +805,7 @@ void RemoveCorridasLista(tGerenciador* g)
 
     if(user==NULL)
     {
-        printf("O USUARIO %s NAO ESTA CADASTRADO!\n",cpf);
+        printf("CPF NAO CADASTRADO! OPERACAO NAO PERMITIDA!\n");
         return;
     }
 
@@ -816,7 +825,7 @@ void RemoveCorridasLista(tGerenciador* g)
 
     if(VerificaVeiculoExisteCorridaUsuario(user,cod))
     {
-        printf("O VEICULO %s FOI REMOVIDO DA LISTA DE CORRIDAS DO USUARIO %s!\n",cod,cpf);
+        printf("O VEICULO #%s FOI REMOVIDO DA LISTA DE CORRIDAS DO USUARIO %s!\n",cod,cpf);
         RemoveCorridaUsuario(user,cod,0);
         ImprimirListaCorridasUsuario(g,user);
         return;
@@ -831,7 +840,7 @@ void RemoveCorridasLista(tGerenciador* g)
 
 void RealizarCorridaeAvaliar(tGerenciador* g)
 {
-    char cpf[MAX_CPF];
+    char cpf[MAX_CPF+1];
     scanf("%s",cpf);
 
     tUsuario* user = NULL;
@@ -862,11 +871,12 @@ void RealizarCorridaeAvaliar(tGerenciador* g)
 
     char* codVeicCorr = getCodVeiculo(veicCorrida);
 
-    printf("CORRIDA %s REALIZADA POR %s DE %s ATE %s FOI CONSUMIDA PELO USUARIO %s!\n",codVeicCorr,
+    printf("CORRIDA #%s REALIZADA POR %s DE %s ATE %s FOI REALIZADA PELO USUARIO #%s!\n",codVeicCorr,
         getNomeMotorista(motoristaCorrida),getOrigemCorrida(realizar),getDestinoCorrida(realizar),cpf);
 
     if(getRestricaoIdadeUsuario(user)==ADULTO)
     {
+        printf("DIGITE UMA NOTA ENTRE 1 E 5:\n");
         int nota;
         scanf("%d",&nota);
 
@@ -876,7 +886,7 @@ void RealizarCorridaeAvaliar(tGerenciador* g)
             tAvaliacao* aval = criaAvaliacao(cpf,nota);
             inserirAvaliacaoVeiculo(veicCorrida,aval);
             IncrementarNumeroAvaliacoesUsuario(user);
-            printf("CORRIDA %s AVALIADA COM NOTA %d!\n",codVeicCorr,nota);
+            printf("CORRIDA #%s AVALIADO COM NOTA %d!\n",codVeicCorr,nota);
         }
         
     }
