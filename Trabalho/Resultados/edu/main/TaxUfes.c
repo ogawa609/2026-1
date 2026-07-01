@@ -348,6 +348,7 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
 
     // COMANDOS NORMAIS 
     int encontrou = 0;
+
     if(strcmp(comando,"COC")==0 ||
        strcmp(comando,"COM")==0 ||
        strcmp(comando,"COV")==0)
@@ -444,11 +445,17 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
 
                         char tip = getTipoVeiculoLetra(v);
                         if(tip=='C')
+                        {
                             printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
                         else if(tip=='M')
+                        {
                             printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
                         else if(tip=='V')
+                        {
                             printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
 
                         printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",
                            getAssentosVeiculo(v),
@@ -506,11 +513,17 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
 
                             char tip = getTipoVeiculoLetra(v);
                         if(tip=='C')
+                        {
                             printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
                         else if(tip=='M')
+                        {
                             printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
                         else if(tip=='V')
+                        {
                             printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
 
                             printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",
                                    getAssentosVeiculo(v),
@@ -579,11 +592,17 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
 
                             char tip = getTipoVeiculoLetra(v);
                         if(tip=='C')
+                        {
                             printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
                         else if(tip=='M')
+                        {
                             printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
                         else if(tip=='V')
+                        {
                             printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        }
 
                             printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",
                                    getAssentosVeiculo(v),

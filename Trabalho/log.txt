@@ -39,7 +39,6 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Copiando Respostas/edu/van.c para Resultados/edu/main
  - Copiando Respostas/edu/corrida.h para Resultados/edu/main
  - Copiando Respostas/edu/data.h para Resultados/edu/main
- - Copiando Respostas/edu/leitura.h para Resultados/edu/main
  - Copiando Respostas/edu/moto.h para Resultados/edu/main
  - Copiando Respostas/edu/motorista.h para Resultados/edu/main
  - Copiando Respostas/edu/TaxUfes.h para Resultados/edu/main
