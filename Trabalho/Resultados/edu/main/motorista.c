@@ -226,8 +226,18 @@ int ImprimeVeiculosMotorista(tMotorista* m, int indice,TipoAssinatura a, TipoUsu
         if(((id==INFANTIL&&iv==INFANTIL)||(id==ADULTO))&&((a==PREMIUM)||(a==PADRAO&&av==PADRAO)))
         {
             printf("%d - ",indice);
-            printaVeiculo(m->veiculos[i]);
-            printf("%d; %.2f; %d; %s; %s (%s); %.2f\n",getAssentosVeiculo(m->veiculos[i]),getKmVeiculo(m->veiculos[i]),getAnoVeiculo(m->veiculos[i]),
+            
+            char tip = getTipoVeiculoLetra(m->veiculos[i]);
+                        if(tip=='C')
+                            printf("CARRO #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
+                        else if(tip=='M')
+                            printf("MOTO #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
+                        else if(tip=='V')
+                            printf("VAN #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
+
+            printf("%d; ",getAssentosVeiculo(m->veiculos[i]));
+            imprimeFloatBr2(getKmVeiculo(m->veiculos[i]));
+            printf("; %d; %s; %s (%s); %.2f\n",getAnoVeiculo(m->veiculos[i]),
             getMarcaVeiculo(m->veiculos[i]),m->cnpj,m->nome,getNotaMediaVeiculo(m->veiculos[i]));
 
             indice++;

@@ -441,15 +441,17 @@ void AdicionaCorridaHistoricoUsuario(tUsuario* user, tCorrida* realizada)
 
 void ImprimeCorridasRealizadasUsuario(tUsuario* user)
 {
+    int tempo = 0;
     if(user->numCorridasRealizadas==0)
     {
         printf("LISTA DE CORRIDAS VAZIA!\n");
+        
         return;
     }
 
-    printf("LISTA DE CORRIDA:\n");
+    printf("LISTA DE CORRIDAS REALIZADAS:\n");
 
-    int tempo = 0;
+    
     for(int i = 0;i<user->numCorridasRealizadas;i++)
     {
         ImprimeCorrida(user->corridasRealizadas[i],i+1);

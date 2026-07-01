@@ -97,8 +97,8 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 08:
  - Arquivo de output gerado: Resultados/edu/main/Casos/08/result_valgrind.txt.
  - Valgrind: Ok! allocs: 69, frees: 69, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 09:
  - Arquivo de output gerado: Resultados/edu/main/Casos/09/result_valgrind.txt.
  - Valgrind: Ok! allocs: 104, frees: 104, errors: 0 | Desconto do valgrind: 0.0%
@@ -109,7 +109,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Valgrind: Ok! allocs: 106, frees: 106, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta main (máximo 7.0) - 60.00 de 100 - 60.00% de 7.0: 4.20.
+ - Nota para a pasta main (máximo 7.0) - 70.00 de 100 - 70.00% de 7.0: 4.90.
  -----
 
 #######################################
@@ -122,11 +122,11 @@ Aluno: edu
  - Pastas Compiladas Corretamente: 1 de 1 
  - Pastas Linkadas Corretamente: 1 de 1
  - Teste main
- - Resultados corretos: 6 de 10
+ - Resultados corretos: 7 de 10
  - Valgrinds corretos: 10 de 10
- - Nota de edu para o teste main: 4.20
- - Nota de edu: 0+(4.20)
- - Nota de edu: 4.20
+ - Nota de edu para o teste main: 4.90
+ - Nota de edu: 0+(4.90)
+ - Nota de edu: 4.90
 
 ----------------------------------------------------------------------------
 

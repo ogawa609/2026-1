@@ -635,7 +635,7 @@ void ImprimirListaCorridasUsuario(tGerenciador* g,tUsuario* user)
     {
         printf("LISTA DE CORRIDAS VAZIA!\n");
          printf("(TOTAL ");
-        imprimeDuracaoCorrida(getMinutosTotaisUsuario(user));
+        imprimeDuracaoCorrida(0);
         printf(" horas)\n");
         return;
     }
@@ -943,9 +943,16 @@ void GerarRelatorioUsuario(tGerenciador* g)
     ImprimeData(getNascimentoUsuario(user));
     printf("\n");
     printf("NUM. CORRIDAS REALIZADAS: %d\n",getCorridasRealizadasUsuario(user));
-    printf("TOTAL HORAS PERCORRIDAS ");
-    imprimeDuracaoCorrida(getMinutosTotaisUsuario(user));
+
+    printf("TOTAL HORAS PERCORRIDAS: ");
+
+     int minutosTotal = getMinutosTotaisUsuario(user);
+     int h = minutosTotal / 60;
+     int m = minutosTotal % 60;
+
+     printf("%d:%02d",h,m);
     printf("\n");
+
     printf("NUM. AVALIACOES REALIZADAS: %d\n",getNumAvaliacoesFeitasUsuario(user));
     printf("USUARIO ");
     TipoUsuario idade = getRestricaoIdadeUsuario(user);
@@ -998,7 +1005,7 @@ AVENIDA DANTE MICHELIN 002; 10/04/2025; 2
 
 void GerarRelatorioVeiculos(tGerenciador* g)
 {
-    char cpf[MAX_CPF];
+    char cpf[MAX_CPF+1];
     scanf("%s",cpf);
 
     tUsuario* user = NULL;
@@ -1013,7 +1020,7 @@ void GerarRelatorioVeiculos(tGerenciador* g)
 
     if(user==NULL)
     {
-        printf("O USUARIO NAO ESTA CADASTRADO\n");
+        printf("CPF NAO CADASTRADO! OPERACAO NAO PERMITIDA!\n");
         return;
     }
 
@@ -1024,12 +1031,14 @@ void GerarRelatorioVeiculos(tGerenciador* g)
     }
 
     printf("RELATORIO GERAL DE VEICULOS\n");
+    
+
     if(totalVeic==0)
     {
         printf("NENHUM VEICULO ENCONTRADO!\n");
         return;
     }
-
+    printf("# - TIPO; ID; NOME; ASSENTOS; QUILOMETRAGEM; ANO; FABRICANTE; CONDUTOR; AVALIACAO MEDIA\n");
     int indice = 1;
     for(int i=0;i<g->qntMotoristas;i++)
     {
