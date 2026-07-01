@@ -1,15 +1,47 @@
-==29065== Memcheck, a memory error detector
-==29065== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==29065== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==29065== Command: Resultados/edu/main/prog Resultados/edu/main/Casos/08
-==29065== Parent PID: 29064
-==29065== 
-==29065== 
-==29065== HEAP SUMMARY:
-==29065==     in use at exit: 0 bytes in 0 blocks
-==29065==   total heap usage: 50 allocs, 50 frees, 9,638 bytes allocated
-==29065== 
-==29065== All heap blocks were freed -- no leaks are possible
-==29065== 
-==29065== For lists of detected and suppressed errors, rerun with: -s
-==29065== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==173442== Memcheck, a memory error detector
+==173442== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==173442== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==173442== Command: Resultados/edu/main/prog Resultados/edu/main/Casos/08
+==173442== Parent PID: 173441
+==173442== 
+==173442== Invalid free() / delete / delete[] / realloc()
+==173442==    at 0x484DB80: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==173442==    by 0x10EEDB: AdicionaCorridaHistoricoUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10ED1D: RemoveCorridaUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10D5F6: RealizarCorridaeAvaliar (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x109BBF: main (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==  Address 0x4a90578 is 0 bytes after a block of size 8 alloc'd
+==173442==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==173442==    by 0x10E21C: CriaUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10E86A: LeUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10B034: LeCadastroAtor (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x1099F4: main (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442== 
+==173442== 
+==173442== HEAP SUMMARY:
+==173442==     in use at exit: 234 bytes in 10 blocks
+==173442==   total heap usage: 69 allocs, 59 frees, 10,071 bytes allocated
+==173442== 
+==173442== 109 (8 direct, 101 indirect) bytes in 1 blocks are definitely lost in loss record 4 of 6
+==173442==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==173442==    by 0x10E21C: CriaUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10E800: LeUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10B034: LeCadastroAtor (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x1099F4: main (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442== 
+==173442== 125 (8 direct, 117 indirect) bytes in 1 blocks are definitely lost in loss record 6 of 6
+==173442==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==173442==    by 0x10E21C: CriaUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10E86A: LeUsuario (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x10B034: LeCadastroAtor (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442==    by 0x1099F4: main (in /home/evogawa/2026-1/Trabalho/Resultados/edu/main/prog)
+==173442== 
+==173442== LEAK SUMMARY:
+==173442==    definitely lost: 16 bytes in 2 blocks
+==173442==    indirectly lost: 218 bytes in 8 blocks
+==173442==      possibly lost: 0 bytes in 0 blocks
+==173442==    still reachable: 0 bytes in 0 blocks
+==173442==         suppressed: 0 bytes in 0 blocks
+==173442== 
+==173442== For lists of detected and suppressed errors, rerun with: -s
+==173442== ERROR SUMMARY: 4 errors from 3 contexts (suppressed: 0 from 0)

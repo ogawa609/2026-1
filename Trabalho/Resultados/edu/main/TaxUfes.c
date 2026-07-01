@@ -634,6 +634,9 @@ void ImprimirListaCorridasUsuario(tGerenciador* g,tUsuario* user)
     if(getQtdCorridasUsuario(user)==0)
     {
         printf("LISTA DE CORRIDAS VAZIA!\n");
+         printf("(TOTAL ");
+        imprimeDuracaoCorrida(getMinutosTotaisUsuario(user));
+        printf(" horas)\n");
         return;
     }
 
@@ -682,14 +685,14 @@ void RelatorioListaCorridasUsuario(tGerenciador* g)
 
 void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 {
-    char cpf[MAX_CPF];
-    scanf("%s",cpf);
+    char cpf[MAX_CPF+1];
+    char cod[MAX_COD_VEICULO+1];
+    scanf("%s #%s",cpf,cod);
+   
 
-    char cod[MAX_COD_VEICULO];
-    scanf("%s",cod);
 
-    char origem[MAX_ENDERECO];
-    char destino[MAX_ENDERECO];
+    char origem[MAX_ENDERECO+1];
+    char destino[MAX_ENDERECO+1];
     int duracao;
     int assentos;
 
@@ -699,8 +702,6 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
     scanf("%d",&assentos);
 
     tVeiculo* veic = NULL;
-    
-
 
     tUsuario* user = NULL;
 
