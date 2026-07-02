@@ -10,16 +10,16 @@ Teste completo
   - Valgrinds corretos: 10 de 10
 Nota de edu para o teste completo: 0
 Teste avaliacao
-  - Resultados corretos: 9 de 10
+  - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
-Nota de edu para o teste avaliacao: .45
+Nota de edu para o teste avaliacao: .50
 Teste veiculo
-  - Resultados corretos: 9 de 10
+  - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
-Nota de edu para o teste veiculo: 1.80
+Nota de edu para o teste veiculo: 2.00
 Teste carro
-  - Resultados corretos: 9 de 10
+  - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
-Nota de edu para o teste carro: .45
-Nota de edu: 0+(.45)+(1.80)+(5.60)+(0)+(.45)
-Nota de edu: 8.30
+Nota de edu para o teste carro: .50
+Nota de edu: 0+(.50)+(2.00)+(5.60)+(0)+(.50)
+Nota de edu: 8.60
