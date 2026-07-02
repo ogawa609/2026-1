@@ -215,30 +215,37 @@ tVeiculo* getVeiculoMotorista(tMotorista* m, int i)
     return m->veiculos[i];
 }
 
-int ImprimeVeiculosMotorista(tMotorista* m, int indice,TipoAssinatura a, TipoUsuario id)
+int ImprimeVeiculosMotorista(tMotorista* m, int indice,TipoAssinatura a, TipoUsuario id, TipoAssinatura r)
 {
     for(int i=0;i<m->qntVeiculos;i++)
     {
 
-        TipoAssinatura av = getRestricaoAssinaturaVeiculo(m->veiculos[i]);
-        TipoUsuario iv = getRestricaoIdadeVeiculo(m->veiculos[i]);
+        int iv = getRestricaoIdadeVeiculo(m->veiculos[i]);
+        int av = getRestricaoAssinaturaVeiculo(m->veiculos[i]);
 
-        if(((id==INFANTIL&&iv==INFANTIL)||(id==ADULTO))&&((a==PREMIUM)||(a==PADRAO&&av==PADRAO)))
+        if((id==INFANTIL&&iv==INFANTIL&&r==PREMIUM)||(id==INFANTIL&&iv==INFANTIL&&r==PADRAO&&av==PADRAO)||
+        (id==ADULTO&&a==PREMIUM)||(id==ADULTO&&a==PADRAO&&av==PADRAO))
         {
             printf("%d - ",indice);
-            
+
             char tip = getTipoVeiculoLetra(m->veiculos[i]);
-                        if(tip=='C')
-                            printf("CARRO #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
-                        else if(tip=='M')
-                            printf("MOTO #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
-                        else if(tip=='V')
-                            printf("VAN #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
+
+            if(tip=='C')
+                printf("CARRO #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
+            else if(tip=='M')
+                printf("MOTO #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
+            else if(tip=='V')
+                printf("VAN #%s; %s; ",getCodVeiculo(m->veiculos[i]),getNomeVeiculo(m->veiculos[i]));
 
             printf("%d; ",getAssentosVeiculo(m->veiculos[i]));
             imprimeFloatBr2(getKmVeiculo(m->veiculos[i]));
-            printf("; %d; %s; %s (%s); %.2f\n",getAnoVeiculo(m->veiculos[i]),
-            getMarcaVeiculo(m->veiculos[i]),m->cnpj,m->nome,getNotaMediaVeiculo(m->veiculos[i]));
+            printf("; %d; %s; %s (%s); ",
+            getAnoVeiculo(m->veiculos[i]),
+            getMarcaVeiculo(m->veiculos[i]),
+            m->cnpj,
+            m->nome);
+            imprimeFloatBr2(getNotaMediaVeiculo(m->veiculos[i]));
+            printf("\n");
 
             indice++;
         }

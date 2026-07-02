@@ -35,4 +35,5 @@ int getMinutosTotaisUsuario(tUsuario* user);
 int getNumAvaliacoesFeitasUsuario(tUsuario* user);
 void ImprimeCorridasRealizadasUsuario(tUsuario* user);
 void AdicionaCorridaHistoricoUsuario(tUsuario* user, tCorrida* realizada);
+
 #endif

@@ -1,9 +1,25 @@
 Arquivos Esperados Corretos: 7 de 7
-Pastas Compiladas Corretamente: 1 de 1 
-Pastas Linkadas Corretamente: 1 de 1
+Pastas Compiladas Corretamente: 5 de 5 
+Pastas Linkadas Corretamente: 5 de 5
 Teste main
-  - Resultados corretos: 7 de 10
+  - Resultados corretos: 8 de 10
   - Valgrinds corretos: 10 de 10
-Nota de edu para o teste main: 4.90
-Nota de edu: 0+(4.90)
-Nota de edu: 4.90
+Nota de edu para o teste main: 5.60
+Teste completo
+  - Resultados corretos: 8 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de edu para o teste completo: 0
+Teste avaliacao
+  - Resultados corretos: 9 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de edu para o teste avaliacao: .45
+Teste veiculo
+  - Resultados corretos: 9 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de edu para o teste veiculo: 1.80
+Teste carro
+  - Resultados corretos: 9 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de edu para o teste carro: .45
+Nota de edu: 0+(.45)+(1.80)+(5.60)+(0)+(.45)
+Nota de edu: 8.30

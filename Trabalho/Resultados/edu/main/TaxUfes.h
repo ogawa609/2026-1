@@ -22,4 +22,5 @@ void GerarRelatorioVeiculos(tGerenciador* g);
 void GerarRelatorioAvaliacao(tGerenciador* g);
 
 
+
 #endif

@@ -463,3 +463,5 @@ void ImprimeCorridasRealizadasUsuario(tUsuario* user)
     imprimeDuracaoCorrida(tempo);
     printf(" horas)\n");
 }
+
+

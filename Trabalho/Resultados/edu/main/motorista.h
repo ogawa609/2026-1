@@ -25,7 +25,7 @@ char* getCnpjMotorista(tMotorista* m);
 tVeiculo* BuscaNomeVeiculoemMotorista(tMotorista* m, char* name, int i);
 int getQtdVeiculosMotorista(tMotorista* m);
 tVeiculo* getVeiculoMotorista(tMotorista* m, int i);
-int ImprimeVeiculosMotorista(tMotorista* m, int indice,TipoAssinatura a, TipoUsuario i);
+int ImprimeVeiculosMotorista(tMotorista* m, int indice,TipoAssinatura a, TipoUsuario i,TipoAssinatura r);
 void OrdenarVeiculosPeloIdMotorista(tMotorista* m);
 
 

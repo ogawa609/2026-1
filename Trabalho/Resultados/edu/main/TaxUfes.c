@@ -1024,6 +1024,23 @@ void GerarRelatorioVeiculos(tGerenciador* g)
         return;
     }
 
+    TipoAssinatura responsavel = -1;
+
+    if(getRestricaoIdadeUsuario(user)==INFANTIL)
+    {
+        tUsuario* r = NULL;
+        for(int i=0;i<g->qntUsuarios;i++)
+        {
+            if(ComparaCpfUsuario(getCartaoUsuario(user),g->usuarios[i]))
+            {
+                r = g->usuarios[i];
+                break;
+            }
+        }
+
+        responsavel = getRestricaoAssinaturaUsuario(r);
+    }
+
     int totalVeic = 0;
     for(int i=0;i<g->qntMotoristas;i++)
     {
@@ -1040,18 +1057,19 @@ void GerarRelatorioVeiculos(tGerenciador* g)
     }
     printf("# - TIPO; ID; NOME; ASSENTOS; QUILOMETRAGEM; ANO; FABRICANTE; CONDUTOR; AVALIACAO MEDIA\n");
     int indice = 1;
+
     for(int i=0;i<g->qntMotoristas;i++)
     {
-        indice = ImprimeVeiculosMotorista(g->motoristas[i],indice,getRestricaoAssinaturaUsuario(user),getRestricaoIdadeUsuario(user));
+        indice = ImprimeVeiculosMotorista(g->motoristas[i],indice,getRestricaoAssinaturaUsuario(user),getRestricaoIdadeUsuario(user),responsavel);
     }
 }
 
 void GerarRelatorioAvaliacao(tGerenciador* g)
 {
-    char cpf[MAX_CPF];
+    char cpf[MAX_CPF+1];
     scanf("%s",cpf);
-
-    char id[MAX_COD_VEICULO];
+    
+    char id[MAX_COD_VEICULO+1];
     scanf("%s",id);
 
     tUsuario* user = NULL;
