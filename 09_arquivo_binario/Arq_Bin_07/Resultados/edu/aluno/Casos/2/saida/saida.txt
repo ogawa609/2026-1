@@ -1,0 +1,6 @@
+Numero de bytes salvos: 215
+Numero de bytes lidos: 215
+
+Alunos:
+AnaCamilaEletricaJoaoPedro
+Professores:

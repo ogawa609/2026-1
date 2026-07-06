@@ -1,0 +1,9 @@
+Arquivos Esperados Corretos: 6 de 9
+Pastas Compiladas Corretamente: 1 de 1 
+Pastas Linkadas Corretamente: 1 de 1
+Teste aluno
+  - Resultados corretos: 0 de 3
+  - Valgrinds corretos: 0 de 3
+Nota de edu para o teste aluno: 0
+Nota de edu: 0+(0)
+Nota de edu: 0

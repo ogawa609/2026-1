@@ -1,0 +1,6 @@
+Numero de bytes salvos: 217
+Numero de bytes lidos: 217
+
+Alunos:
+GabrielIsabelaLuisaMariada
+Professores:

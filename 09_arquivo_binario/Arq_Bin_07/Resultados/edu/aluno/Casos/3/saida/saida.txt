@@ -1,0 +1,6 @@
+Numero de bytes salvos: 250
+Numero de bytes lidos: 250
+
+Alunos:
+AndreCarolinaCivilGraficoLeticiaLucas
+Professores:

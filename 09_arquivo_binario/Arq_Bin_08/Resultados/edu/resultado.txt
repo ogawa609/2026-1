@@ -1,0 +1,25 @@
+Arquivos Esperados Corretos: 7 de 7
+Pastas Compiladas Corretamente: 5 de 5 
+Pastas Linkadas Corretamente: 5 de 5
+Teste main
+  - Resultados corretos: 0 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de edu para o teste main: 0
+Teste contato
+  - Resultados corretos: 3 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de edu para o teste contato: 1.87
+Teste lista_contato
+  - Resultados corretos: 3 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de edu para o teste lista_contato: 1.87
+Teste vector
+  - Resultados corretos: 3 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de edu para o teste vector: 1.87
+Teste completo
+  - Resultados corretos: 3 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de edu para o teste completo: 1.87
+Nota de edu: 0+(1.87)+(0)+(1.87)+(1.87)+lista_(1.87)
+Nota de edu: 
