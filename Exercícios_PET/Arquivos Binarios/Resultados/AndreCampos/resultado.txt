@@ -1,0 +1,21 @@
+Arquivos Esperados Corretos: 0 de 7
+Pastas Compiladas Corretamente: 0 de 4 
+Pastas Linkadas Corretamente: 0 de 4
+Teste main
+  - Resultados corretos: 0 de 6
+  - Valgrinds corretos: 0 de 6
+Nota de AndreCampos para o teste main: 0
+Teste cpu
+  - Resultados corretos: 0 de 6
+  - Valgrinds corretos: 0 de 6
+Nota de AndreCampos para o teste cpu: 0
+Teste instrucao
+  - Resultados corretos: 0 de 6
+  - Valgrinds corretos: 0 de 6
+Nota de AndreCampos para o teste instrucao: 0
+Teste usuario
+  - Resultados corretos: 0 de 6
+  - Valgrinds corretos: 0 de 6
+Nota de AndreCampos para o teste usuario: 0
+Nota de AndreCampos: 0+(0)+(0)+(0)+(0)
+Nota de AndreCampos: 0
