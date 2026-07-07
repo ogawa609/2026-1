@@ -2,11 +2,11 @@ Arquivos Esperados Corretos: 7 de 7
 Pastas Compiladas Corretamente: 5 de 5 
 Pastas Linkadas Corretamente: 5 de 5
 Teste main
-  - Resultados corretos: 8 de 10
+  - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
-Nota de edu para o teste main: 5.60
+Nota de edu para o teste main: 7.00
 Teste completo
-  - Resultados corretos: 8 de 10
+  - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
 Nota de edu para o teste completo: 0
 Teste avaliacao
@@ -21,5 +21,5 @@ Teste carro
   - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
 Nota de edu para o teste carro: .50
-Nota de edu: 0+(.50)+(2.00)+(5.60)+(0)+(.50)
-Nota de edu: 8.60
+Nota de edu: 0+(.50)+(2.00)+(7.00)+(0)+(.50)
+Nota de edu: 10.00

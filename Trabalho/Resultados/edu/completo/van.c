@@ -94,7 +94,6 @@ tVan *criaVan(char *linha)
     }
 
     v->quilometragem = atof(str);
-    v->quilometragem += 700;
 
 
     str = strtok(NULL, ";");

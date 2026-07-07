@@ -140,9 +140,8 @@ void liberaMotorista(void* dado)
     free(m);
 }
 
-char *getNomeMotorista(void*dado)
+char *getNomeMotorista(tMotorista* m)
 {
-    tMotorista* m = (tMotorista*) dado;
     return m->nome;
 }
 char *getTelefoneMotorista(void*dado)
@@ -191,11 +190,12 @@ tVeiculo* BuscaVeiculoemMotorista(tMotorista* m, char* placa)
     return NULL;
 }
 
-tVeiculo* BuscaNomeVeiculoemMotorista(tMotorista* m, char* name,int i)
+tVeiculo* BuscaNomeVeiculoemMotorista(tMotorista* m, char* name,int i,char tipo)
 {
     char* nome = getNomeVeiculo(m->veiculos[i]);
+    char t = getTipoVeiculoLetra(m->veiculos[i]);
 
-    if(strstr(nome,name)!=NULL)
+    if(strstr(nome,name)!=NULL && tipo==t)
         return m->veiculos[i];
 
     return NULL;
@@ -274,5 +274,7 @@ void OrdenarVeiculosPeloIdMotorista(tMotorista* m)
         
     }
 }
+
+
 
 
