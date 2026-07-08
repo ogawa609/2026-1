@@ -133,22 +133,17 @@ void EqualizaIntervalosHistograma(tHistograma *histograma, tImagem *imagem)
 
     int altura = ObterAlturaImagem(imagem);
     int largura = ObterLarguraImagem(imagem);
+    int intervalo = histograma->nIntervalos;
 
     
+    int probabilidade[intervalo];
+    int media[intervalo];
+    int somatoria = 0;
+    float pr = ((histograma->nIntervalos - 1)/(largura*altura));
 
     for(int i=0;i<histograma->nIntervalos;i++)
     {
-        float pr = ((histograma->nIntervalos - 1)/(largura*altura))*100;
-
         
-        int somatorio = 0;
-        for(int j=0;j<histograma->nIntervalos;j++)
-        {
-            float pr = 
-        }
 
-        float sk = pr*somatorio;
-       
-        histograma->intensidadeEqualizada[i] = Arredondar(sk);
     }
 }

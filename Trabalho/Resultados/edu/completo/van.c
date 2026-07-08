@@ -5,7 +5,7 @@
 
 struct Van
 {
-     char* placa;
+    char* placa;
     char* nome;
     char* marca;
     TipoAssinatura restricaoAssinatura;
@@ -24,10 +24,8 @@ tVan *criaVan(char *linha)
 {
     tVan* v = malloc(sizeof(tVan));
 
-     char *str;
+    char *str;
     int tam;
-
-   
 
     str = strtok(linha, ";");
     while (*str == ' '||*str=='#') 
