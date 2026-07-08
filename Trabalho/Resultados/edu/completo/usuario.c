@@ -36,8 +36,8 @@ struct Usuario{
 };
 
 // Aloca memoria para struct e para os campos; inicia os campos; insere dados em cada campo passada por parâmetros;
-tUsuario* CriaUsuario(char*nome,char*cpf,char*tel,char*ender,char*user,
-char*senha,int dia,int mes, int ano,char* email,char* cartao, char* assinatura)
+tUsuario* CriaUsuario(char*nome,char*cpf,char*tel,char*ender,char*user,char*senha,
+                        int dia,int mes, int ano,char* email,char* cartao, char* assinatura)
 {
     tUsuario* m = malloc(sizeof(tUsuario));
 
@@ -220,10 +220,6 @@ tUsuario* LeUsuario(char* assinatura)
         strcpy(cartao,str);
     }
 
-
-
-      
-
     tUsuario* u = NULL;
 
     if(strcmp(assinatura,"USUARIO INFANTIL")==0)
@@ -254,8 +250,8 @@ void LiberaUsuario(tUsuario* user)
 
     for(int i=0;i<user->numCorridasRealizadas;i++)
         LiberaCorrida(user->corridasRealizadas[i]);
+
     free(user->corridasRealizadas);
-    
     free(user);
 }
 
@@ -266,10 +262,7 @@ char *getCpfUsuario(tUsuario* user)
 
 int ComparaCpfUsuario(char* cpf, tUsuario* user)
 {
-    if(strcmp(cpf,user->cpf)==0)
-        return 1;
-
-    return 0;
+    return strcmp(cpf,user->cpf)==0;  
 }
 
 TipoUsuario getRestricaoIdadeUsuario(tUsuario* user)
@@ -287,8 +280,7 @@ TipoAssinatura getRestricaoAssinaturaUsuario(tUsuario* user)
     return user->assinatura;
 }
 
-int UsuarioPodeUsarVeiculo(TipoUsuario usuario,
-                           TipoUsuario restricaoVeiculo)
+int UsuarioPodeUsarVeiculo(TipoUsuario usuario,TipoUsuario restricaoVeiculo)
 {
     if(restricaoVeiculo == INFANTIL)
         return 1;
@@ -313,7 +305,6 @@ tCorrida* getCorridaUsuario(tUsuario* user, int i)
 void AdicionaCorridaUsuario(tUsuario* user,tCorrida* run)
 {
     user->corridas[user->numCorridas] = run;
-
     user->numCorridas++;
     user->corridas = realloc(user->corridas,(user->numCorridas+1) * sizeof(tCorrida*));
 }
@@ -336,7 +327,6 @@ void RemoveCorridaUsuario(tUsuario* user, char* placa, int modo)
 {
     int indice = -1;
     
-
     for(int i=0;i<user->numCorridas;i++)
     {
         tVeiculo* temp = getVeiculoCorrida(user->corridas[i]);
@@ -360,17 +350,14 @@ void RemoveCorridaUsuario(tUsuario* user, char* placa, int modo)
     }
 
     user->numCorridas--;
-
     user->corridas[user->numCorridas] = NULL;
 
     if(modo==1)
-    {
         AdicionaCorridaHistoricoUsuario(user,removido);
-    }
+    
     else
-    {
         LiberaCorrida(removido);
-    }
+    
 
 }
 
@@ -378,10 +365,12 @@ void IncrementarServicosUsuario(tUsuario* user)
 {
     user->servicosConsumidos++;
 }
+
 void IncrementarMinutosGastosUsuario(tUsuario* user, int minutos)
 {
     user->minutosGastos += minutos;
 }
+
 void IncrementarNumeroAvaliacoesUsuario(tUsuario* user)
 {
     user->totalAvaliacoes++;
@@ -391,10 +380,12 @@ char* getSenhaUsuario(tUsuario* user)
 {
     return user->senha;
 }
+
 char* getNomeUsuario(tUsuario* user)
 {
     return user->nome;
 }
+
 char* getTelefoneUsuario(tUsuario* user)
 {
     return user->telefone;
@@ -433,9 +424,7 @@ int getNumAvaliacoesFeitasUsuario(tUsuario* user)
 void AdicionaCorridaHistoricoUsuario(tUsuario* user, tCorrida* realizada)
 {
     user->corridasRealizadas[user->numCorridasRealizadas] = realizada;
-
     user->numCorridasRealizadas++;
-
     user->corridasRealizadas = realloc(user->corridasRealizadas,(user->numCorridasRealizadas+1)*sizeof(tCorrida*));
 }
 
@@ -445,18 +434,15 @@ void ImprimeCorridasRealizadasUsuario(tUsuario* user)
     if(user->numCorridasRealizadas==0)
     {
         printf("LISTA DE CORRIDAS VAZIA!\n");
-        
         return;
     }
 
     printf("LISTA DE CORRIDAS REALIZADAS:\n");
 
-    
     for(int i = 0;i<user->numCorridasRealizadas;i++)
     {
         ImprimeCorrida(user->corridasRealizadas[i],i+1);
         tempo += getTempoCorrida(user->corridasRealizadas[i]);
-        
     }
 
     printf("(TOTAL ");

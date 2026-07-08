@@ -36,8 +36,6 @@ tCarro *criaCarro(char *linha)
     char *str;
     int tam;
 
-   
-
     str = strtok(linha, ";");
     while (*str == ' '||*str=='#') 
         str++;
@@ -101,7 +99,6 @@ tCarro *criaCarro(char *linha)
         if (str[i] == ',')
             str[i] = '.';
     }
-
     c->quilometragem = atof(str);
 
 

@@ -7,6 +7,7 @@
 
 
 struct Corrida{
+
     tVeiculo* veiculo;
     int duracao;
     char* origem;
@@ -36,7 +37,8 @@ tCorrida* CriaCorrida(tVeiculo* veiculo,tMotorista* d, int duracao, char* origem
 
     return c;
 }
-void LiberaCorrida(void*dado)
+
+void LiberaCorrida(tCorrida *dado)
 {
     tCorrida* c = (tCorrida*) dado;
 
@@ -51,13 +53,13 @@ int getTempoCorrida(tCorrida* c)
 {
     return c->duracao;
 }
-//NUMERO - VEICULO #ID; NOME; DURACAO; ORIGEM; DESTINO; DATA DE MARCACAO (DD/MM/AAA); QUANTIDADE DE ASSENTOS REQUISITADOS
-//1 - CARRO #ABCDEF123; GOL G5; 00:27; AVENIDA FERNANDO FERRARRI 001; AVENIDA DANTE MICHELIN 002; 10/04/2025; 2
+
 void ImprimeCorrida(tCorrida* c,int indice)
 {
     printf("%d - ",indice);
     
     char tip = getTipoVeiculoLetra(c->veiculo);
+
     if(tip=='C')
              printf("CARRO #%s; %s; ",getCodVeiculo(c->veiculo),getNomeVeiculo(c->veiculo));
     else if(tip=='M')

@@ -74,16 +74,14 @@ void LeCadastroAtor(tGerenciador* g)
         tUsuario* user = LeUsuario(tipo);
 
         if(user==NULL)
-        {
             return;
-        }
+        
         
 
         if(strcmp(tipo,"USUARIO INFANTIL")==0)
         {
             char* cpf = getCartaoUsuario(user);
             
-
             //verifica se cadastro ja existe
             for(int i=0;i<g->qntUsuarios;i++)
             {
@@ -94,7 +92,6 @@ void LeCadastroAtor(tGerenciador* g)
                     printf("CPF JA EXISTENTE! OPERACAO NAO PERMITIDA!\n");
                     LiberaUsuario(user);
                     return;
-
                 }
             }
 
@@ -106,23 +103,18 @@ void LeCadastroAtor(tGerenciador* g)
 
                 if(strcmp(cpf,adulto)==0 && deMaior==1)
                 {
-                    
                         CadastrarUsuario(g,user);
                         printf("USUARIO CADASTRADO COM SUCESSO!\n");
-                        
                         return;
-                    
                 }
             }
 
-            
-            
-                printf("CPF NAO CADASTRADO! OPERACAO NAO PERMITIDA!\n");
-                LiberaUsuario(user);
-                return;
-            
-                
+            printf("CPF NAO CADASTRADO! OPERACAO NAO PERMITIDA!\n");
+            LiberaUsuario(user);
+            return;
+                 
         }
+
         else
         {
             char* cpf = getCpfUsuario(user);
@@ -141,15 +133,14 @@ void LeCadastroAtor(tGerenciador* g)
             printf("USUARIO CADASTRADO COM SUCESSO!\n");
         }
     }
+
     else if(strcmp(tipo,"CONDUTOR")==0)
     {
         tMotorista* driver = LeMotorista();
 
         if(driver==NULL)
-        {
             return;
-        }
-
+        
         char* cnpj = getCnpjMotorista(driver);
 
         for(int i=0;i<g->qntMotoristas;i++)
@@ -172,9 +163,8 @@ tMotorista* BuscarMotoristaGerenciador(tGerenciador* g, char* cnpj)
     for(int i=0;i<g->qntMotoristas;i++)
     {
         if(ComparaCnpjMotorista(g->motoristas[i],cnpj))
-        {
             return g->motoristas[i];
-        }
+        
     }
 
     return NULL;
@@ -188,10 +178,10 @@ void CadastrarVeiculo(tGerenciador* g)
     tMotorista* driver = BuscarMotoristaGerenciador(g, cnpj);
 
     if(driver==NULL) //verifica se cnpj existe
-        {
-            printf("CONDUTOR SEM CADASTRO!\n");
-            return;
-        }
+    {
+        printf("CONDUTOR SEM CADASTRO!\n");
+        return;
+    }
 
     char tipoVeiculo;
     scanf(" %c; ",&tipoVeiculo);
@@ -199,73 +189,73 @@ void CadastrarVeiculo(tGerenciador* g)
     char linha[1000];
     scanf(" %[^\n]",linha);
 
-    
-
     if(tipoVeiculo=='C')
     {
         tCarro* car = criaCarro(linha);
-        tVeiculo* data = criaVeiculo(car,getAnoCarro,getCodCarro,getNotaMediaCarro,getNomeCarro,getAssentosCarro,getKmCarro,getMarcaCarro,printaCarro,getRestricaoAssinaturaCarro,getLetraTipoCarro,getRestricaoIdadeCarro,liberaCarro);
+        tVeiculo* data = criaVeiculo(car,getAnoCarro,getCodCarro,getNotaMediaCarro,getNomeCarro,getAssentosCarro,getKmCarro,
+                        getMarcaCarro,printaCarro,getRestricaoAssinaturaCarro,getLetraTipoCarro,getRestricaoIdadeCarro,liberaCarro);
         
         //verifica se veiculo ja esta cadastrado
         
-            char* placa = getCodVeiculo(data);
-            int flag = 0;
+        char* placa = getCodVeiculo(data);
+        int flag = 0;
             
            
-            for(int i = 0;i<g->qntMotoristas;i++)
+        for(int i = 0;i<g->qntMotoristas;i++)
+        {
+            tVeiculo* dataS = BuscaVeiculoemMotorista(g->motoristas[i],placa);
+
+            if(dataS != NULL)
             {
-                 tVeiculo* dataS = BuscaVeiculoemMotorista(g->motoristas[i],placa);
-
-                 if(dataS != NULL)
-                 {
-                    flag = 1;
-                    break;
-                 }
+                flag = 1;
+                break;
             }
+        }
 
-                if(flag)
-                {
-                    printf("VEICULO JA CADASTRADO! OPERACAO NAO PERMITIDA!\n");
-                    liberaVeiculo(data);
-                    return;
-                }
+        if(flag)
+        {
+            printf("VEICULO JA CADASTRADO! OPERACAO NAO PERMITIDA!\n");
+            liberaVeiculo(data);
+            return;
+        }
 
-                AdicionaVeiculoEmMotorista(driver,data);
-                printf("VEICULO CADASTRADO COM SUCESSO!\n");
+        AdicionaVeiculoEmMotorista(driver,data);
+        printf("VEICULO CADASTRADO COM SUCESSO!\n");
         
     }
+
     else if(tipoVeiculo=='M')
     {
         tMoto* moto = criaMoto(linha);
         tVeiculo* data = criaVeiculo(moto,getAnoMoto,getCodMoto,getNotaMediaMoto,getNomeMoto,getAssentosMoto,getKmMoto,getMarcaMoto,printaMoto,getRestricaoAssinaturaMoto,getLetraTipoMoto,getRestricaoIdadeMoto,liberaMoto);
 
-
-         char* placa = getCodVeiculo(data);
-            int flag = 0;
+        char* placa = getCodVeiculo(data);
+        int flag = 0;
             
            
-            for(int i = 0;i<g->qntMotoristas;i++)
+        for(int i = 0;i<g->qntMotoristas;i++)
+        {
+            tVeiculo* dataS = BuscaVeiculoemMotorista(g->motoristas[i],placa);
+
+            if(dataS != NULL)
             {
-                 tVeiculo* dataS = BuscaVeiculoemMotorista(g->motoristas[i],placa);
-
-                 if(dataS != NULL)
-                 {
-                    flag = 1;
-                    break;
-                 }
+                flag = 1;
+                break;
             }
+        }
 
-                if(flag)
-                {
-                    printf("VEICULO JA CADASTRADO! OPERACAO NAO PERMITIDA!\n");
-                    liberaVeiculo(data);
-                    return;
-                }
+        if(flag)
+        {
+            printf("VEICULO JA CADASTRADO! OPERACAO NAO PERMITIDA!\n");
+            liberaVeiculo(data);
+            return;
+        }
 
-                AdicionaVeiculoEmMotorista(driver,data);
-                printf("VEICULO CADASTRADO COM SUCESSO!\n");
+        AdicionaVeiculoEmMotorista(driver,data);
+        printf("VEICULO CADASTRADO COM SUCESSO!\n");
 
     }
+
     else if(tipoVeiculo=='V')
     {
         tVan* van = criaVan(linha);
@@ -277,41 +267,42 @@ void CadastrarVeiculo(tGerenciador* g)
         tVeiculo* dataS;
         int indice=-1;
            
-            for(int i = 0;i<g->qntMotoristas;i++) //verifica se veiculo esta cadastrado no sistema
-            {
-                dataS = BuscaVeiculoemMotorista(g->motoristas[i],placa);
+        for(int i = 0;i<g->qntMotoristas;i++) //verifica se veiculo esta cadastrado no sistema
+        {
+            dataS = BuscaVeiculoemMotorista(g->motoristas[i],placa);
 
-                 if(dataS != NULL)
-                 {
-                    indice = i;
-                    flag = 1;
-                    break;
-                 }
+            if(dataS != NULL)
+            {
+                indice = i;
+                flag = 1;
+                break;
             }
+        }
 
-            if(flag) //se veiculo ja estiver cadastrado
-            {
+        if(flag) //se veiculo ja estiver cadastrado
+        {
                 
-                if(ComparaCnpjMotorista(g->motoristas[indice],cnpj)) //checa se cnpj do motorista em posse do veiculo eh o msm que o digitado
-                {
-                    int assentos = getAssentosVeiculo(data);
-                    atualizaNumeroAssentosVan(dataS,assentos);
-                    liberaVeiculo(data);
-                    printf("VAN ATUALIZADA COM SUCESSO!\n");
+            if(ComparaCnpjMotorista(g->motoristas[indice],cnpj)) //checa se cnpj do motorista em posse do veiculo eh o msm que o digitado
+            {
+                int assentos = getAssentosVeiculo(data);
+                atualizaNumeroAssentosVan(dataS,assentos);
+                liberaVeiculo(data);
+                printf("VAN ATUALIZADA COM SUCESSO!\n");
                     
-                }
-                else //caso nao for
-                {
-                    printf("CONDUTOR NAO PODE ALTERAR ESTE VEICULO!\n");
-                    liberaVeiculo(data);
-                    
-                }
-
-                return;
             }
 
-            AdicionaVeiculoEmMotorista(driver,data);
-            printf("VEICULO CADASTRADO COM SUCESSO!\n");
+            else //caso nao for
+            {
+                printf("CONDUTOR NAO PODE ALTERAR ESTE VEICULO!\n");
+                liberaVeiculo(data);
+                    
+            }
+
+            return;
+        }
+
+        AdicionaVeiculoEmMotorista(driver,data);
+        printf("VEICULO CADASTRADO COM SUCESSO!\n");
     }
 }
 
@@ -448,8 +439,7 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
 
         if(assinaturaUsuario != PREMIUM)
         {
-            printf("A CONTA DE CPF %s NAO POSSUI PERMISSAO PARA EXECUTAR ESSE COMANDO!\n",
-                   cpf);
+            printf("A CONTA DE CPF %s NAO POSSUI PERMISSAO PARA EXECUTAR ESSE COMANDO!\n",cpf);
             return;
         }
 
@@ -489,7 +479,7 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
                             printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
                         }
 
-                       printf("%d; ",getAssentosVeiculo(v));
+                        printf("%d; ",getAssentosVeiculo(v));
                         imprimeFloatBr2(getKmVeiculo(v));  
                         printf("; %d; %s; %s (%s); ",getAnoVeiculo(v),getMarcaVeiculo(v),getCnpjMotorista(g->motoristas[i]),getNomeMotorista(g->motoristas[i]));
                         imprimeFloatBr2(getNotaMediaVeiculo(v));
@@ -521,7 +511,6 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
             
             if((strstr(nomeMoto,nome)) != NULL)
             {
-                
                 for(int j = 0;j < getQtdVeiculosMotorista(g->motoristas[i]);j++)
                 {
                     tVeiculo* v = getVeiculoMotorista(g->motoristas[i],j);
@@ -575,10 +564,9 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
     {
         TipoAssinatura assinaturaUsuario = getRestricaoAssinaturaUsuario(user);
 
-            if(getRestricaoIdadeUsuario(user)==INFANTIL)
+        if(getRestricaoIdadeUsuario(user)==INFANTIL)
         {
             char* cpfAdult = getCartaoUsuario(user);
-
             tUsuario* responsavelCria = NULL;
 
             for(int i = 0; i < g->qntUsuarios; i++)
@@ -609,46 +597,34 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
         {
             if(strstr(getNomeMotorista(g->motoristas[i]),nome) != NULL)
             {
-                
-                for(int j = 0;
-                    j < getQtdVeiculosMotorista(g->motoristas[i]);
-                    j++)
+                for(int j = 0;j < getQtdVeiculosMotorista(g->motoristas[i]);j++)
                 {
-                    tVeiculo* v =
-                        getVeiculoMotorista(g->motoristas[i], j);
+                    tVeiculo* v = getVeiculoMotorista(g->motoristas[i], j);
 
-                    if(v != NULL &&
-                       getAssentosVeiculo(v) >= assentos)
+                    if(v != NULL && getAssentosVeiculo(v) >= assentos)
                     {
                         TipoAssinatura assinaturaVeiculo = getRestricaoAssinaturaVeiculo(v);
-
                         TipoUsuario restricaoVeiculo = getRestricaoIdadeVeiculo(v);
-
-                        
 
                         if(assinaturaVeiculo == PREMIUM && UsuarioPodeUsarVeiculo(restricaoUsuario,restricaoVeiculo))
                         {
                             printf("%d - ", indice++);
-
                             char tip = getTipoVeiculoLetra(v);
-                        if(tip=='C')
-                        {
-                            printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
-                        }
-                        else if(tip=='M')
-                        {
-                            printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
-                        }
-                        else if(tip=='V')
-                        {
-                            printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
-                        }
 
-                        printf("%d; ",getAssentosVeiculo(v));
-                        imprimeFloatBr2(getKmVeiculo(v));  
-                        printf("; %d; %s; %s (%s); ",getAnoVeiculo(v),getMarcaVeiculo(v),getCnpjMotorista(g->motoristas[i]),getNomeMotorista(g->motoristas[i]));
-                        imprimeFloatBr2(getNotaMediaVeiculo(v));
-                        printf("\n");
+                            if(tip=='C')
+                                printf("CARRO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        
+                            else if(tip=='M')                      
+                                printf("MOTO #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        
+                            else if(tip=='V')                       
+                                printf("VAN #%s; %s; ",getCodVeiculo(v),getNomeVeiculo(v));
+                        
+                            printf("%d; ",getAssentosVeiculo(v));
+                            imprimeFloatBr2(getKmVeiculo(v));  
+                            printf("; %d; %s; %s (%s); ",getAnoVeiculo(v),getMarcaVeiculo(v),getCnpjMotorista(g->motoristas[i]),getNomeMotorista(g->motoristas[i]));
+                            imprimeFloatBr2(getNotaMediaVeiculo(v));
+                            printf("\n");
 
                             encontrou = 1;
                         }
@@ -660,10 +636,10 @@ void BuscaVeiculosGerenciador(tGerenciador* g, char* comando)
         if(!encontrou)
             printf("NENHUM VEICULO ENCONTRADO!\n");
     }
+
     else
-    {
         printf("COMANDO INVALIDO\n");
-    }
+    
 }
 
 void ImprimirListaCorridasUsuario(tGerenciador* g,tUsuario* user)
@@ -671,7 +647,7 @@ void ImprimirListaCorridasUsuario(tGerenciador* g,tUsuario* user)
     if(getQtdCorridasUsuario(user)==0)
     {
         printf("LISTA DE CORRIDAS VAZIA!\n");
-         printf("(TOTAL ");
+        printf("(TOTAL ");
         imprimeDuracaoCorrida(0);
         printf(" horas)\n");
         return;
@@ -683,8 +659,7 @@ void ImprimirListaCorridasUsuario(tGerenciador* g,tUsuario* user)
     for(int i = 0;i<getQtdCorridasUsuario(user);i++)
     {
         ImprimeCorrida(getCorridaUsuario(user,i),i+1);
-        tempo += getTempoCorrida(getCorridaUsuario(user,i));
-        
+        tempo += getTempoCorrida(getCorridaUsuario(user,i));        
     }
 
     printf("(TOTAL ");
@@ -717,7 +692,6 @@ void RelatorioListaCorridasUsuario(tGerenciador* g)
 
     ImprimirListaCorridasUsuario(g,user);
 
-    
 }
 
 void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
@@ -763,27 +737,23 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
     for(int i=0;i<g->qntMotoristas;i++)
     {
         veic = BuscaVeiculoemMotorista(g->motoristas[i],cod);
-         if(veic!=NULL)
-         {
+        if(veic!=NULL)
+        {
             driver = g->motoristas[i];
             break;
-         }
+        }
             
     }
 
     if(veic==NULL)
     {
         printf("O VEICULO #%s NAO ESTA CADASTRADO!\n",cod);
-        
         return;
     }
+
     else if(VerificaVeiculoExisteCorridaUsuario(user,cod))
-    {
         return;
-    }
-
     
-
     TipoUsuario idade = getRestricaoIdadeUsuario(user);
     TipoAssinatura assinatura = getRestricaoAssinaturaUsuario(user);
     TipoAssinatura assinVeic = getRestricaoAssinaturaVeiculo(veic);
@@ -798,15 +768,13 @@ void RealizacaoSelecaoCorridaUsuario(tGerenciador* g)
 
     if(assentos>assentosVeic)
     {
-        printf("O VEICULO #%s NAO ADMITE A QUANTIDADE DE ASSENTOS REQUISITADA!\n",cod);
-        
+        printf("O VEICULO #%s NAO ADMITE A QUANTIDADE DE ASSENTOS REQUISITADA!\n",cod);        
         return;
     }
 
     if(assinatura==PADRAO && assinVeic == PREMIUM)
     {
-        printf("NAO EH POSSIVEL ADICIONAR O VEICULO PREMIUM #%s A CONTA PADRAO DO CPF %s!\n",cod,cpf);
-        
+        printf("NAO EH POSSIVEL ADICIONAR O VEICULO PREMIUM #%s A CONTA PADRAO DO CPF %s!\n",cod,cpf);       
         return;
     }
 
@@ -825,8 +793,6 @@ void RemoveCorridasLista(tGerenciador* g)
     getchar();
     getchar();
     scanf("%s",cod);
-
-    
 
     tVeiculo* veiculo = NULL;
     tUsuario* user = NULL;
@@ -867,6 +833,7 @@ void RemoveCorridasLista(tGerenciador* g)
         ImprimirListaCorridasUsuario(g,user);
         return;
     }
+
     else
     {
         printf("O VEICULO NAO ESTA PRESENTE NA LISTA DE CORRIDAS DO USUARIO %s!\n",cpf);
@@ -909,7 +876,7 @@ void RealizarCorridaeAvaliar(tGerenciador* g)
     char* codVeicCorr = getCodVeiculo(veicCorrida);
 
     printf("CORRIDA #%s REALIZADA POR %s DE %s ATE %s FOI REALIZADA PELO USUARIO #%s!\n",codVeicCorr,
-        getNomeMotorista(motoristaCorrida),getOrigemCorrida(realizar),getDestinoCorrida(realizar),cpf);
+          getNomeMotorista(motoristaCorrida),getOrigemCorrida(realizar),getDestinoCorrida(realizar),cpf);
 
     if(getRestricaoIdadeUsuario(user)==ADULTO)
     {
@@ -919,7 +886,6 @@ void RealizarCorridaeAvaliar(tGerenciador* g)
 
         if(nota>0&&nota<6)
         {
-
             tAvaliacao* aval = criaAvaliacao(cpf,nota);
             inserirAvaliacaoVeiculo(veicCorrida,aval);
             IncrementarNumeroAvaliacoesUsuario(user);
@@ -927,10 +893,10 @@ void RealizarCorridaeAvaliar(tGerenciador* g)
         }
         
     }
+
     IncrementarServicosUsuario(user);
     int tempo = getTempoCorrida(realizar);
     IncrementarMinutosGastosUsuario(user,tempo);
-
     RemoveCorridaUsuario(user,codVeicCorr,1);
 }
 
@@ -941,6 +907,7 @@ void GerarRelatorioUsuario(tGerenciador* g)
     char cpf[MAX_CPF];
     scanf("%s",cpf);
     tUsuario* user = NULL;
+
     for(int i = 0;i<g->qntUsuarios;i++)
     {
         if(ComparaCpfUsuario(cpf,g->usuarios[i]))
@@ -958,6 +925,7 @@ void GerarRelatorioUsuario(tGerenciador* g)
 
     char* senha = getSenhaUsuario(user);
     char senhaDigitada[MAX_SENHA];
+
     scanf("%s",senhaDigitada);
 
     if(strcmp(senha,senhaDigitada)!=0)
@@ -980,22 +948,21 @@ void GerarRelatorioUsuario(tGerenciador* g)
     ImprimeData(getNascimentoUsuario(user));
     printf("\n");
     printf("NUM. CORRIDAS REALIZADAS: %d\n",getCorridasRealizadasUsuario(user));
-
     printf("TOTAL HORAS PERCORRIDAS: ");
 
      int minutosTotal = getMinutosTotaisUsuario(user);
      int h = minutosTotal / 60;
      int m = minutosTotal % 60;
 
-     printf("%d:%02d",h,m);
+    printf("%d:%02d",h,m);
     printf("\n");
 
     printf("NUM. AVALIACOES REALIZADAS: %d\n",getNumAvaliacoesFeitasUsuario(user));
     printf("USUARIO ");
     TipoUsuario idade = getRestricaoIdadeUsuario(user);
     TipoAssinatura assinatura = getRestricaoAssinaturaUsuario(user);
+
     if(idade==ADULTO)
-    
         printf("18+ ");
       
     else
@@ -1003,41 +970,20 @@ void GerarRelatorioUsuario(tGerenciador* g)
     
     if(assinatura==PADRAO)
         printf("PADRAO\n");
+
     else
         printf("PREMIUM\n");
 
     if(idade==ADULTO)
         printf("CARTAO NUM.: %s\n",getCartaoUsuario(user));
+
     else
         printf("CPF RESPONSAVEL: %s\n",getCartaoUsuario(user));
 
     ImprimirListaCorridasUsuario(g,user);
-
     ImprimeCorridasRealizadasUsuario(user);
 
 }
-
-/*
-RELATORIO USUARIO DE CPF 111.111.111-11
-NOME: PEDRO DA SILVA
-TELEFONE: (00)0000-0000
-ENDERECO: RUA CURVA DE RIO
-NOME DE USUARIO: CLIENTE_PEDRO
-SENHA: *********
-EMAIL: pedroDaSilva@ufoodes.com
-DATA NASCIMENTO: 01/01/2001
-NUM. CORRIDAS REALIZADAS: 1
-TOTAL HORAS PERCORRIDAS: 0:27
-NUM. AVALIACOES REALIZADAS: 1
-USUARIO 18+ PADRAO
-CARTAO NUM.: 555555555555
-LISTA DE CORRIDAS VAZIA!
-(TOTAL 0:00 horas)
-LISTA DE CORRIDAS REALIZADAS:
-1 - CARRO #ABCDEF123; GOL G5; 00:27; AVENIDA FERNANDO FERRARRI 001;
-AVENIDA DANTE MICHELIN 002; 10/04/2025; 2
-(TOTAL 0:27 horas)
-*/
 
 
 void GerarRelatorioVeiculos(tGerenciador* g)
@@ -1046,6 +992,7 @@ void GerarRelatorioVeiculos(tGerenciador* g)
     scanf("%s",cpf);
 
     tUsuario* user = NULL;
+
     for(int i=0;i<g->qntUsuarios;i++)
     {
         if(ComparaCpfUsuario(cpf,g->usuarios[i]))
@@ -1092,13 +1039,13 @@ void GerarRelatorioVeiculos(tGerenciador* g)
         printf("NENHUM VEICULO ENCONTRADO!\n");
         return;
     }
+
     printf("# - TIPO; ID; NOME; ASSENTOS; QUILOMETRAGEM; ANO; FABRICANTE; CONDUTOR; AVALIACAO MEDIA\n");
     int indice = 1;
 
     for(int i=0;i<g->qntMotoristas;i++)
-    {
         indice = ImprimeVeiculosMotorista(g->motoristas[i],indice,getRestricaoAssinaturaUsuario(user),getRestricaoIdadeUsuario(user),responsavel);
-    }
+    
 }
 
 void GerarRelatorioAvaliacao(tGerenciador* g)
@@ -1172,7 +1119,5 @@ void GerarRelatorioAvaliacao(tGerenciador* g)
             }
         }
         printf("%d - %s - %d\n",i+1,nome,getNotaAvaliacao(temp));
-    }
-    
-
+    }    
 }

@@ -12,7 +12,6 @@ int main()
     while(scanf("%s",comando)!=EOF)
     {
         
-
         if(strcmp(comando,"OUT")==0)
         {
             break;

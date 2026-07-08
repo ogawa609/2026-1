@@ -62,7 +62,7 @@ tMotorista* LeMotorista()
     char user[MAX_NOME_USUARIO];
     char senha[MAX_SENHA];
 
-    //**** */
+    
    char linha[1000];
 
    while(1)
@@ -117,7 +117,7 @@ tMotorista* LeMotorista()
         str++;
     strcpy(senha,str);
 
-    //
+    
 
     tMotorista* m = CriaMotorista(nome,cnpj,telefone,endereco,user,senha);
     return m;
@@ -130,6 +130,7 @@ void liberaMotorista(void* dado)
 
     for(int i=0;i<m->qntVeiculos;i++)
         liberaVeiculo(m->veiculos[i]);
+        
     free(m->veiculos);
     free(m->cnpj);
     free(m->endereco);

@@ -27,8 +27,6 @@ tMoto *criaMoto(char *linha)
      char *str;
     int tam;
 
-   
-
     str = strtok(linha, ";");
     while (*str == ' '||*str=='#') 
         str++;

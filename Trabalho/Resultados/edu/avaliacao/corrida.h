@@ -7,7 +7,7 @@
 
 typedef struct Corrida tCorrida;
 tCorrida* CriaCorrida(tVeiculo* veiculo, tMotorista* d, int duracao, char* origem, char* destino, tData* dataMarcacao, int qntAssentos);
-void LiberaCorrida(void*dado);
+void LiberaCorrida(tCorrida *dado);
 void ImprimeCorrida(tCorrida* c,int indice);
 int getTempoCorrida(tCorrida* c);
 tVeiculo* getVeiculoCorrida(tCorrida* c);

@@ -15,6 +15,7 @@ struct Avaliacao{
 /// @param cpf CPF da pessoa que fez a avaliação.
 /// @param nota Nota atribuída pela pessoa.
 /// @return A avaliação criada.
+
 tAvaliacao* criaAvaliacao(char* cpf, int nota)
 {
     tAvaliacao* a = malloc(sizeof(tAvaliacao));
